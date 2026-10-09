@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FerociousSkeletonOverride
+  m_Controller: {fileID: 9100000, guid: 253492feb50aaac4aab1259afc51e4f2, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: f626105859ffd274e99301d935b01276, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 91a95f4e98b50504eb664464ca5447df, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8bf6a8412170ba1488295ada74568864, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e496c123daa6f3b41a684e447761eab7, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1f870424b40e50848bb9f05063e32ffe, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2ed9d1077131b084e95ab9f40e15effe, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d3da8ef37e659e0488c6613c45e25aa8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 79008870e48d23b4382d9c9ac452207a, type: 2}

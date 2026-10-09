@@ -1,0 +1,1807 @@
+fileFormatVersion: 2
+guid: c4be43d154187ca438efa768d455c2f3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1867389588082319831
+    second: vfx_sequence_x64_tornado_0
+  - first:
+      213: 2375348258304419619
+    second: vfx_sequence_x64_tornado_1
+  - first:
+      213: 1213412054789512986
+    second: vfx_sequence_x64_tornado_2
+  - first:
+      213: 4660465277542206946
+    second: vfx_sequence_x64_tornado_3
+  - first:
+      213: 1296052123726488035
+    second: vfx_sequence_x64_tornado_4
+  - first:
+      213: 5998367764222461008
+    second: vfx_sequence_x64_tornado_5
+  - first:
+      213: 7328180088957077436
+    second: vfx_sequence_x64_tornado_6
+  - first:
+      213: 8955073162220469727
+    second: vfx_sequence_x64_tornado_7
+  - first:
+      213: -6034867001124181439
+    second: vfx_sequence_x64_tornado_8
+  - first:
+      213: -8202221651839032347
+    second: vfx_sequence_x64_tornado_9
+  - first:
+      213: 8172488618711215012
+    second: vfx_sequence_x64_tornado_10
+  - first:
+      213: -3708021173786990258
+    second: vfx_sequence_x64_tornado_11
+  - first:
+      213: 2032941924156121432
+    second: vfx_sequence_x64_tornado_12
+  - first:
+      213: -2323222868983757902
+    second: vfx_sequence_x64_tornado_13
+  - first:
+      213: -5539435828739580064
+    second: vfx_sequence_x64_tornado_14
+  - first:
+      213: -6456343251397974055
+    second: vfx_sequence_x64_tornado_15
+  - first:
+      213: -5222752883675939644
+    second: vfx_sequence_x64_tornado_16
+  - first:
+      213: -944823210900334295
+    second: vfx_sequence_x64_tornado_17
+  - first:
+      213: 7022141855058000428
+    second: vfx_sequence_x64_tornado_18
+  - first:
+      213: -9062571448406810233
+    second: vfx_sequence_x64_tornado_19
+  - first:
+      213: 4276503802507082493
+    second: vfx_sequence_x64_tornado_20
+  - first:
+      213: 8934792996020505734
+    second: vfx_sequence_x64_tornado_21
+  - first:
+      213: 1613753859992692468
+    second: vfx_sequence_x64_tornado_22
+  - first:
+      213: 1691835003748602007
+    second: vfx_sequence_x64_tornado_23
+  - first:
+      213: -7405418082477286694
+    second: vfx_sequence_x64_tornado_24
+  - first:
+      213: 1950071793526848903
+    second: vfx_sequence_x64_tornado_25
+  - first:
+      213: -7357084704270958043
+    second: vfx_sequence_x64_tornado_26
+  - first:
+      213: -5691184274793872895
+    second: vfx_sequence_x64_tornado_27
+  - first:
+      213: 6555426895453807527
+    second: vfx_sequence_x64_tornado_28
+  - first:
+      213: -2086657321742849137
+    second: vfx_sequence_x64_tornado_29
+  - first:
+      213: 963718309494335798
+    second: vfx_sequence_x64_tornado_30
+  - first:
+      213: -3373711929992647755
+    second: vfx_sequence_x64_tornado_31
+  - first:
+      213: 1654093970070507950
+    second: vfx_sequence_x64_tornado_32
+  - first:
+      213: -6277960761041074308
+    second: vfx_sequence_x64_tornado_33
+  - first:
+      213: -3007041272020653001
+    second: vfx_sequence_x64_tornado_34
+  - first:
+      213: 5106838930524628209
+    second: vfx_sequence_x64_tornado_35
+  - first:
+      213: -7416964867953628698
+    second: vfx_sequence_x64_tornado_36
+  - first:
+      213: -1368679361263660425
+    second: vfx_sequence_x64_tornado_37
+  - first:
+      213: -2872410912470495220
+    second: vfx_sequence_x64_tornado_38
+  - first:
+      213: 8965029166528318813
+    second: vfx_sequence_x64_tornado_39
+  - first:
+      213: 5350969319522339238
+    second: vfx_sequence_x64_tornado_40
+  - first:
+      213: 7543991870857272310
+    second: vfx_sequence_x64_tornado_41
+  - first:
+      213: -4108404496408250168
+    second: vfx_sequence_x64_tornado_42
+  - first:
+      213: 645295564253287928
+    second: vfx_sequence_x64_tornado_43
+  - first:
+      213: 396985600663559598
+    second: vfx_sequence_x64_tornado_44
+  - first:
+      213: -111549516093974902
+    second: vfx_sequence_x64_tornado_45
+  - first:
+      213: -7236169695242939174
+    second: vfx_sequence_x64_tornado_46
+  - first:
+      213: -3630927940091994186
+    second: vfx_sequence_x64_tornado_47
+  - first:
+      213: 2041600703988004520
+    second: vfx_sequence_x64_tornado_48
+  - first:
+      213: 1430762123999565485
+    second: vfx_sequence_x64_tornado_49
+  - first:
+      213: -2527869306669986379
+    second: vfx_sequence_x64_tornado_50
+  - first:
+      213: -3431117709160160997
+    second: vfx_sequence_x64_tornado_51
+  - first:
+      213: 6333009058914098217
+    second: vfx_sequence_x64_tornado_52
+  - first:
+      213: -8206899646699500068
+    second: vfx_sequence_x64_tornado_53
+  - first:
+      213: -8102229370020185681
+    second: vfx_sequence_x64_tornado_54
+  - first:
+      213: 7713351659629645061
+    second: vfx_sequence_x64_tornado_55
+  - first:
+      213: 9060749791960201224
+    second: vfx_sequence_x64_tornado_56
+  - first:
+      213: 2879275128885844328
+    second: vfx_sequence_x64_tornado_57
+  - first:
+      213: 820026139465999244
+    second: vfx_sequence_x64_tornado_58
+  - first:
+      213: 3221407748808579115
+    second: vfx_sequence_x64_tornado_59
+  - first:
+      213: 2133165569210262544
+    second: vfx_sequence_x64_tornado_60
+  - first:
+      213: 9002885660723681754
+    second: vfx_sequence_x64_tornado_61
+  - first:
+      213: -3400668467050315575
+    second: vfx_sequence_x64_tornado_62
+  - first:
+      213: 1853975339168668862
+    second: vfx_sequence_x64_tornado_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_0
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1807
+        width: 181
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92e17114013b516e0800000000000000
+      internalID: -1867389588082319831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_1
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 1802
+        width: 182
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 327e312e7aee6f020800000000000000
+      internalID: 2375348258304419619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_2
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1805
+        width: 181
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1fd7ebb5d7e6d010800000000000000
+      internalID: 1213412054789512986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_3
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 1806
+        width: 191
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ed02fb4a7c4da040800000000000000
+      internalID: 4660465277542206946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_4
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 1810
+        width: 185
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e1ab1d2a808cf110800000000000000
+      internalID: 1296052123726488035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_5
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 1797
+        width: 184
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05442aa63bb7e3350800000000000000
+      internalID: 5998367764222461008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_6
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1801
+        width: 182
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb7806ce6fce2b560800000000000000
+      internalID: 7328180088957077436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_7
+      rect:
+        serializedVersion: 2
+        x: 1822
+        y: 1801
+        width: 189
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fddf8c3589fc64c70800000000000000
+      internalID: 8955073162220469727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_8
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1548
+        width: 193
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14a2443cf68df3ca0800000000000000
+      internalID: -6034867001124181439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_9
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1548
+        width: 183
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e3ed196ddadb2e80800000000000000
+      internalID: -8202221651839032347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_10
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1551
+        width: 178
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab643959138a6170800000000000000
+      internalID: 8172488618711215012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_11
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 1550
+        width: 183
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e49accc63667a8cc0800000000000000
+      internalID: -3708021173786990258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_12
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 1553
+        width: 181
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8512356b8e5763c10800000000000000
+      internalID: 2032941924156121432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_13
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 1546
+        width: 185
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b3c8201c1142cfd0800000000000000
+      internalID: -2323222868983757902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_14
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 1550
+        width: 177
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06fd7e38678ff13b0800000000000000
+      internalID: -5539435828739580064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_15
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 1547
+        width: 188
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d7ee6025067666a0800000000000000
+      internalID: -6456343251397974055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_16
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1294
+        width: 181
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cc39d27ced0587b0800000000000000
+      internalID: -5222752883675939644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_17
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1288
+        width: 184
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 929ddbaab4053e2f0800000000000000
+      internalID: -944823210900334295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_18
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 1291
+        width: 177
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a7221ffc8a37160800000000000000
+      internalID: 7022141855058000428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_19
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 1289
+        width: 181
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7816d1288474b3280800000000000000
+      internalID: -9062571448406810233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_20
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 1293
+        width: 178
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfaba0dec81395b30800000000000000
+      internalID: 4276503802507082493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_21
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 1289
+        width: 182
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c437d24e2cefb70800000000000000
+      internalID: 8934792996020505734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_22
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1292
+        width: 181
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f6a7cbe594356610800000000000000
+      internalID: 1613753859992692468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_23
+      rect:
+        serializedVersion: 2
+        x: 1829
+        y: 1293
+        width: 188
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790d101e8fa9a7710800000000000000
+      internalID: 1691835003748602007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_24
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1041
+        width: 176
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adadfa45d7baa3990800000000000000
+      internalID: -7405418082477286694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_25
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1032
+        width: 184
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d3dabd6fb001b10800000000000000
+      internalID: 1950071793526848903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_26
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 1035
+        width: 184
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5224873e07266e990800000000000000
+      internalID: -7357084704270958043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_27
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 1037
+        width: 196
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1024f952e0ad401b0800000000000000
+      internalID: -5691184274793872895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_28
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 1040
+        width: 181
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3e09e770e89fa50800000000000000
+      internalID: 6555426895453807527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_29
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 1034
+        width: 182
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8bac81b834ba03e0800000000000000
+      internalID: -2086657321742849137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_30
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 1037
+        width: 178
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63923fc42b0df5d00800000000000000
+      internalID: 963718309494335798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_31
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 1029
+        width: 191
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bb6a46dfda2e21d0800000000000000
+      internalID: -3373711929992647755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_32
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 776
+        width: 184
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea11b27b3b584f610800000000000000
+      internalID: 1654093970070507950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_33
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 779
+        width: 187
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c774e4c23f330e8a0800000000000000
+      internalID: -6277960761041074308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_34
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 783
+        width: 184
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73c254425e7d446d0800000000000000
+      internalID: -3007041272020653001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_35
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 776
+        width: 179
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f46e0b33f22fd640800000000000000
+      internalID: 5106838930524628209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_36
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 780
+        width: 176
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e96216dfb5a11990800000000000000
+      internalID: -7416964867953628698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_37
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 779
+        width: 191
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 772987c5f59710de0800000000000000
+      internalID: -1368679361263660425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_38
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 782
+        width: 186
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c009d396e752328d0800000000000000
+      internalID: -2872410912470495220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_39
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 778
+        width: 191
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5dcfe7378e2a6c70800000000000000
+      internalID: 8965029166528318813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_40
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 525
+        width: 197
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a98426de36724a40800000000000000
+      internalID: 5350969319522339238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_41
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 525
+        width: 188
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fbd1e203a4a1b860800000000000000
+      internalID: 7543991870857272310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_42
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 529
+        width: 178
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8f7f5b0e30cf6c0800000000000000
+      internalID: -4108404496408250168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_43
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 521
+        width: 183
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f5d37295ec84f800800000000000000
+      internalID: 645295564253287928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_44
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 524
+        width: 177
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead1f7cec40628500800000000000000
+      internalID: 396985600663559598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_45
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 523
+        width: 183
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a861a5e5e42b37ef0800000000000000
+      internalID: -111549516093974902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_46
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 526
+        width: 180
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad419944006f39b90800000000000000
+      internalID: -7236169695242939174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_47
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 519
+        width: 193
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf96c5a64a5c9dc0800000000000000
+      internalID: -3630927940091994186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_48
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 266
+        width: 180
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a6746ef509355c10800000000000000
+      internalID: 2041600703988004520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_49
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 266
+        width: 182
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6d31f32961bd310800000000000000
+      internalID: 1430762123999565485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_50
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 269
+        width: 185
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd825142443becd0800000000000000
+      internalID: -2527869306669986379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_51
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 267
+        width: 194
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b11e4f25f983260d0800000000000000
+      internalID: -3431117709160160997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_52
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 270
+        width: 180
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92cd7e37f2e53e750800000000000000
+      internalID: 6333009058914098217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_53
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 265
+        width: 185
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdd823bd04c3b1e80800000000000000
+      internalID: -8206899646699500068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_54
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 268
+        width: 181
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9b53fb0591f8f80800000000000000
+      internalID: -8102229370020185681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_55
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 261
+        width: 186
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50d05e3a7745b0b60800000000000000
+      internalID: 7713351659629645061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_56
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 9
+        width: 178
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8087b7c0eef3ebd70800000000000000
+      internalID: 9060749791960201224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_57
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 11
+        width: 187
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8699bd3897d35f720800000000000000
+      internalID: 2879275128885844328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_58
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 14
+        width: 177
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c83e76ddd61516b00800000000000000
+      internalID: 820026139465999244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_59
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 11
+        width: 179
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b281d60a74db4bc20800000000000000
+      internalID: 3221407748808579115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_60
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 14
+        width: 182
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0142fdf78c68a9d10800000000000000
+      internalID: 2133165569210262544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_61
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 11
+        width: 186
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad994e02fcca0fc70800000000000000
+      internalID: 9002885660723681754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_62
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 15
+        width: 189
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c00896fb066ec0d0800000000000000
+      internalID: -3400668467050315575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_sequence_x64_tornado_63
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 12
+        width: 195
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc9b798fb4aab910800000000000000
+      internalID: 1853975339168668862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      vfx_sequence_x64_tornado_0: -1867389588082319831
+      vfx_sequence_x64_tornado_1: 2375348258304419619
+      vfx_sequence_x64_tornado_10: 8172488618711215012
+      vfx_sequence_x64_tornado_11: -3708021173786990258
+      vfx_sequence_x64_tornado_12: 2032941924156121432
+      vfx_sequence_x64_tornado_13: -2323222868983757902
+      vfx_sequence_x64_tornado_14: -5539435828739580064
+      vfx_sequence_x64_tornado_15: -6456343251397974055
+      vfx_sequence_x64_tornado_16: -5222752883675939644
+      vfx_sequence_x64_tornado_17: -944823210900334295
+      vfx_sequence_x64_tornado_18: 7022141855058000428
+      vfx_sequence_x64_tornado_19: -9062571448406810233
+      vfx_sequence_x64_tornado_2: 1213412054789512986
+      vfx_sequence_x64_tornado_20: 4276503802507082493
+      vfx_sequence_x64_tornado_21: 8934792996020505734
+      vfx_sequence_x64_tornado_22: 1613753859992692468
+      vfx_sequence_x64_tornado_23: 1691835003748602007
+      vfx_sequence_x64_tornado_24: -7405418082477286694
+      vfx_sequence_x64_tornado_25: 1950071793526848903
+      vfx_sequence_x64_tornado_26: -7357084704270958043
+      vfx_sequence_x64_tornado_27: -5691184274793872895
+      vfx_sequence_x64_tornado_28: 6555426895453807527
+      vfx_sequence_x64_tornado_29: -2086657321742849137
+      vfx_sequence_x64_tornado_3: 4660465277542206946
+      vfx_sequence_x64_tornado_30: 963718309494335798
+      vfx_sequence_x64_tornado_31: -3373711929992647755
+      vfx_sequence_x64_tornado_32: 1654093970070507950
+      vfx_sequence_x64_tornado_33: -6277960761041074308
+      vfx_sequence_x64_tornado_34: -3007041272020653001
+      vfx_sequence_x64_tornado_35: 5106838930524628209
+      vfx_sequence_x64_tornado_36: -7416964867953628698
+      vfx_sequence_x64_tornado_37: -1368679361263660425
+      vfx_sequence_x64_tornado_38: -2872410912470495220
+      vfx_sequence_x64_tornado_39: 8965029166528318813
+      vfx_sequence_x64_tornado_4: 1296052123726488035
+      vfx_sequence_x64_tornado_40: 5350969319522339238
+      vfx_sequence_x64_tornado_41: 7543991870857272310
+      vfx_sequence_x64_tornado_42: -4108404496408250168
+      vfx_sequence_x64_tornado_43: 645295564253287928
+      vfx_sequence_x64_tornado_44: 396985600663559598
+      vfx_sequence_x64_tornado_45: -111549516093974902
+      vfx_sequence_x64_tornado_46: -7236169695242939174
+      vfx_sequence_x64_tornado_47: -3630927940091994186
+      vfx_sequence_x64_tornado_48: 2041600703988004520
+      vfx_sequence_x64_tornado_49: 1430762123999565485
+      vfx_sequence_x64_tornado_5: 5998367764222461008
+      vfx_sequence_x64_tornado_50: -2527869306669986379
+      vfx_sequence_x64_tornado_51: -3431117709160160997
+      vfx_sequence_x64_tornado_52: 6333009058914098217
+      vfx_sequence_x64_tornado_53: -8206899646699500068
+      vfx_sequence_x64_tornado_54: -8102229370020185681
+      vfx_sequence_x64_tornado_55: 7713351659629645061
+      vfx_sequence_x64_tornado_56: 9060749791960201224
+      vfx_sequence_x64_tornado_57: 2879275128885844328
+      vfx_sequence_x64_tornado_58: 820026139465999244
+      vfx_sequence_x64_tornado_59: 3221407748808579115
+      vfx_sequence_x64_tornado_6: 7328180088957077436
+      vfx_sequence_x64_tornado_60: 2133165569210262544
+      vfx_sequence_x64_tornado_61: 9002885660723681754
+      vfx_sequence_x64_tornado_62: -3400668467050315575
+      vfx_sequence_x64_tornado_63: 1853975339168668862
+      vfx_sequence_x64_tornado_7: 8955073162220469727
+      vfx_sequence_x64_tornado_8: -6034867001124181439
+      vfx_sequence_x64_tornado_9: -8202221651839032347
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

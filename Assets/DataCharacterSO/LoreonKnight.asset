@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4adebfe3722e1d46bf936cf0846cd06, type: 3}
+  m_Name: LoreonKnight
+  m_EditorClassIdentifier: 
+  characterId: 8
+  characterName: LoreonKnight
+  level: 1
+  isUnlocked: 0
+  animatorController: {fileID: 22100000, guid: 7175afeadebfa1449891c345c8a631bf, type: 2}
+  thumbnail: {fileID: -2074723713338306197, guid: 114df3a01cb5dc549aa614888224dab7, type: 3}
+  characterPrefab: {fileID: 1219543493644265849, guid: 9ba3a1e50ccc5004e906e086bfbd6cec, type: 3}
+  attackCount: 2
+  powerRating: 5
+  playerStatsRuntime:
+    hpLevel: 0
+    atkLevel: 0
+    defLevel: 0
+    critLevel: 0
+    armorPenLevel: 0
+    trueDamageLevel: 0
+    dmgReduceLevel: 0
+  statsSO: {fileID: 11400000, guid: f9ec6676419f14e4d8c6a63d56206f99, type: 2}

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4adebfe3722e1d46bf936cf0846cd06, type: 3}
+  m_Name: Huntress
+  m_EditorClassIdentifier: 
+  characterId: 6
+  characterName: Huntress
+  level: 1
+  isUnlocked: 0
+  animatorController: {fileID: 22100000, guid: ca54ff32041b9064799906ed6a00be97, type: 2}
+  thumbnail: {fileID: 5126121102192863849, guid: 4f38e6dd7d0be6a43a19ad87b032b8ee, type: 3}
+  characterPrefab: {fileID: 5209227040725048771, guid: fadb6a09e3bdcf14c942721054464c92, type: 3}
+  attackCount: 3
+  powerRating: 4.5
+  playerStatsRuntime:
+    hpLevel: 0
+    atkLevel: 0
+    defLevel: 0
+    critLevel: 0
+    armorPenLevel: 0
+    trueDamageLevel: 0
+    dmgReduceLevel: 0
+  statsSO: {fileID: 11400000, guid: 166f4fafd79229249b8b3f8ff0ddd3f3, type: 2}

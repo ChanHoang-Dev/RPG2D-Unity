@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4adebfe3722e1d46bf936cf0846cd06, type: 3}
+  m_Name: Knight
+  m_EditorClassIdentifier: 
+  characterId: 7
+  characterName: Knight
+  level: 1
+  isUnlocked: 0
+  animatorController: {fileID: 9100000, guid: 493d38e5734fce54ca38e93ad3d8b930, type: 2}
+  thumbnail: {fileID: -4692031305682673928, guid: 294e9a7d18bcb594bb3fcaa991858fd2, type: 3}
+  characterPrefab: {fileID: 6256962620633043653, guid: 93af4af626584ed4fa618403ff908b98, type: 3}
+  attackCount: 3
+  powerRating: 4.5
+  playerStatsRuntime:
+    hpLevel: 0
+    atkLevel: 0
+    defLevel: 0
+    critLevel: 0
+    armorPenLevel: 0
+    trueDamageLevel: 0
+    dmgReduceLevel: 0
+  statsSO: {fileID: 11400000, guid: ddad5ff1c6bb5094ea4e773d1c16d0ce, type: 2}

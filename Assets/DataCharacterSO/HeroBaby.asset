@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4adebfe3722e1d46bf936cf0846cd06, type: 3}
+  m_Name: HeroBaby
+  m_EditorClassIdentifier: 
+  characterId: 5
+  characterName: HeroBaby
+  level: 1
+  isUnlocked: 0
+  animatorController: {fileID: 22100000, guid: 73aa9aa1fb322b34c99a1f209ed865c5, type: 2}
+  thumbnail: {fileID: -6487675592799196305, guid: ae0acc2a77e10ef4291799b03021b029, type: 3}
+  characterPrefab: {fileID: 7466769566195780921, guid: 79434b3e3aa5edb4fb391e43859fa289, type: 3}
+  attackCount: 2
+  powerRating: 4.5
+  playerStatsRuntime:
+    hpLevel: 0
+    atkLevel: 0
+    defLevel: 0
+    critLevel: 0
+    armorPenLevel: 0
+    trueDamageLevel: 0
+    dmgReduceLevel: 0
+  statsSO: {fileID: 11400000, guid: e6244dfd0e83b7642a906efc1acdd98b, type: 2}

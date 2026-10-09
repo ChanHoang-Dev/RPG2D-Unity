@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - SkeletonLow
+  - Spear
+  - NightBorne
+  - SkeletonShield
+  - Gobin
+  - Mushroom
+  - SkeletonThin
+  - Cthulu
+  - FerociousSkeleton
+  - CrowEnemy
+  - OldGuardian
+  - OldGolem
+  - SkeletonSeeker
+  - SkeletonLighter
+  - BoD
+  - ToD
+  - FlyingEnemy
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - Player
+  - SkeletonLow
+  - SkeletonLow_Skull
+  - HitBox
+  - Spear
+  - NightBorne
+  - SkeletonShield
+  - Gobin
+  - Mushroom
+  - SkeletonThin
+  - Cthulu
+  - FerociousSkeleton
+  - CrowEnemy
+  - OldGuardian
+  - OldGolem
+  - SkeletonSeeker
+  - SkeletonLighter
+  - BoD
+  - ToD
+  - FlyEnemy
+  - EnemyDetection
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BackGround
+    uniqueID: 3649567307
+    locked: 0
+  - name: Ground
+    uniqueID: 1832693521
+    locked: 0
+  - name: Button0star
+    uniqueID: 786680443
+    locked: 0
+  - name: Button1star
+    uniqueID: 977038957
+    locked: 0
+  - name: Button2star
+    uniqueID: 1774948601
+    locked: 0
+  - name: Button3star
+    uniqueID: 3602871887
+    locked: 0
+  m_RenderingLayers:
+  - Default

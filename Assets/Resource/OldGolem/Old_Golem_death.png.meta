@@ -1,0 +1,703 @@
+fileFormatVersion: 2
+guid: 567c8792c512708429434798a74f00a4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8795282582845764243
+    second: Old_Golem_death_0
+  - first:
+      213: -6637468490446954545
+    second: Old_Golem_death_1
+  - first:
+      213: -6710656760816753226
+    second: Old_Golem_death_2
+  - first:
+      213: -6969436019107603964
+    second: Old_Golem_death_3
+  - first:
+      213: 5564738261682950123
+    second: Old_Golem_death_4
+  - first:
+      213: -931843399073966158
+    second: Old_Golem_death_5
+  - first:
+      213: 2251715643841041659
+    second: Old_Golem_death_6
+  - first:
+      213: -4083904813159725749
+    second: Old_Golem_death_7
+  - first:
+      213: -7856400930752201174
+    second: Old_Golem_death_8
+  - first:
+      213: 5653155384272450459
+    second: Old_Golem_death_9
+  - first:
+      213: 5122547999690301410
+    second: Old_Golem_death_10
+  - first:
+      213: 7955245570883658586
+    second: Old_Golem_death_11
+  - first:
+      213: -5049308175351559347
+    second: Old_Golem_death_12
+  - first:
+      213: -3947704314330719529
+    second: Old_Golem_death_13
+  - first:
+      213: 3083078265724179129
+    second: Old_Golem_death_14
+  - first:
+      213: 741868284556283329
+    second: Old_Golem_death_15
+  - first:
+      213: 1130496299415428255
+    second: Old_Golem_death_16
+  - first:
+      213: 653428804583460334
+    second: Old_Golem_death_17
+  - first:
+      213: -5761667462914042176
+    second: Old_Golem_death_18
+  - first:
+      213: 8501934890470046747
+    second: Old_Golem_death_19
+  - first:
+      213: -6245321413857388309
+    second: Old_Golem_death_20
+  - first:
+      213: -2524425726992394509
+    second: Old_Golem_death_21
+  - first:
+      213: -6373430114371541763
+    second: Old_Golem_death_22
+  - first:
+      213: -8054968379223925735
+    second: Old_Golem_death_23
+  - first:
+      213: -6926842407750073736
+    second: Old_Golem_death_24
+  - first:
+      213: -4923595328181657534
+    second: Old_Golem_death_25
+  - first:
+      213: 2309593141345960063
+    second: Old_Golem_death_26
+  - first:
+      213: -3854008949138424005
+    second: Old_Golem_death_27
+  - first:
+      213: -4993218253406382123
+    second: Old_Golem_death_28
+  - first:
+      213: 1977597479170639365
+    second: Old_Golem_death_29
+  - first:
+      213: -1667479706962381967
+    second: Old_Golem_death_30
+  - first:
+      213: 6965663832493191201
+    second: Old_Golem_death_31
+  - first:
+      213: -4969215375356003000
+    second: Old_Golem_death_32
+  - first:
+      213: 7967157771178050896
+    second: Old_Golem_death_33
+  - first:
+      213: 8060481647580418985
+    second: Old_Golem_death_34
+  - first:
+      213: 3640830320673033335
+    second: Old_Golem_death_35
+  - first:
+      213: 5200531615986308178
+    second: Old_Golem_death_36
+  - first:
+      213: -8892937053822038581
+    second: Old_Golem_death_37
+  - first:
+      213: -2985285924436276134
+    second: Old_Golem_death_38
+  - first:
+      213: 1646779214505777426
+    second: Old_Golem_death_39
+  - first:
+      213: -5522131898250531756
+    second: Old_Golem_death_40
+  - first:
+      213: 360955123639942289
+    second: Old_Golem_death_41
+  - first:
+      213: 6819056838626312110
+    second: Old_Golem_death_42
+  - first:
+      213: -3802943689663443459
+    second: Old_Golem_death_43
+  - first:
+      213: 3266088314007278944
+    second: Old_Golem_death_44
+  - first:
+      213: -2804618847049180547
+    second: Old_Golem_death_45
+  - first:
+      213: -5701843404980197998
+    second: Old_Golem_death_46
+  - first:
+      213: -8399421583856191969
+    second: Old_Golem_death_47
+  - first:
+      213: -1323825839843280778
+    second: Old_Golem_death_48
+  - first:
+      213: 6387804768860604232
+    second: Old_Golem_death_49
+  - first:
+      213: 4694112654930354664
+    second: Old_Golem_death_50
+  - first:
+      213: -8084506096668456149
+    second: Old_Golem_death_51
+  - first:
+      213: 5861677889351114462
+    second: Old_Golem_death_52
+  - first:
+      213: 7980467525647999610
+    second: Old_Golem_death_53
+  - first:
+      213: 3499098438698347828
+    second: Old_Golem_death_54
+  - first:
+      213: -5238124740935116588
+    second: Old_Golem_death_55
+  - first:
+      213: -8775747917281217307
+    second: Old_Golem_death_56
+  - first:
+      213: -3998191475362183440
+    second: Old_Golem_death_57
+  - first:
+      213: 4621560293290350740
+    second: Old_Golem_death_58
+  - first:
+      213: 219718384344528568
+    second: Old_Golem_death_59
+  - first:
+      213: -6720268319019993273
+    second: Old_Golem_death_60
+  - first:
+      213: -6915461867703651645
+    second: Old_Golem_death_61
+  - first:
+      213: 4779333147332773834
+    second: Old_Golem_death_62
+  - first:
+      213: 5966596639662476259
+    second: Old_Golem_death_63
+  - first:
+      213: 8580987460073879676
+    second: Old_Golem_death_64
+  - first:
+      213: 7507147489324184253
+    second: Old_Golem_death_65
+  - first:
+      213: -6357491139852376086
+    second: Old_Golem_death_66
+  - first:
+      213: 2345397341563239325
+    second: Old_Golem_death_67
+  - first:
+      213: -4649176883606361177
+    second: Old_Golem_death_68
+  - first:
+      213: -7963890217293652660
+    second: Old_Golem_death_69
+  - first:
+      213: 5044464949179217360
+    second: Old_Golem_death_70
+  - first:
+      213: -4340064273345525982
+    second: Old_Golem_death_71
+  - first:
+      213: 4875011421619131615
+    second: Old_Golem_death_72
+  - first:
+      213: 8053448897766911912
+    second: Old_Golem_death_73
+  - first:
+      213: 3622414571020377636
+    second: Old_Golem_death_74
+  - first:
+      213: 7140959387317254712
+    second: Old_Golem_death_75
+  - first:
+      213: -2782433565277791790
+    second: Old_Golem_death_76
+  - first:
+      213: 2046230407866298534
+    second: Old_Golem_death_77
+  - first:
+      213: 1695713314136099199
+    second: Old_Golem_death_78
+  - first:
+      213: 3301357436417651757
+    second: Old_Golem_death_79
+  - first:
+      213: -8485541416728716237
+    second: Old_Golem_death_80
+  - first:
+      213: -8793952321872797917
+    second: Old_Golem_death_81
+  - first:
+      213: -837083306437821631
+    second: Old_Golem_death_82
+  - first:
+      213: -8886562121533613660
+    second: Old_Golem_death_83
+  - first:
+      213: 8107413186202751624
+    second: Old_Golem_death_84
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Old_Golem_death_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1474
+        width: 64
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6d4c4e1711e0f580800000000000000
+      internalID: -8795282582845764243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_Golem_death_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1314
+        width: 64
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcf9f032399f2e3a0800000000000000
+      internalID: -6637468490446954545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_Golem_death_2
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1154
+        width: 69
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48387095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5a1f90b35fed2a0800000000000000
+      internalID: -6710656760816753226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_Golem_death_3
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 994
+        width: 85
+        height: 104
+      alignment: 9
+      pivot: {x: 0.5, y: 0.43269232}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a5744cdd6974f90800000000000000
+      internalID: -6969436019107603964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_Golem_death_5
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 834
+        width: 90
+        height: 108
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41666666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b757eb9d5d6113f0800000000000000
+      internalID: -931843399073966158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_Golem_death_16
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 674
+        width: 94
+        height: 111
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4054054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9cdc8a056450bf00800000000000000
+      internalID: 1130496299415428255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_Golem_death_45
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 513
+        width: 122
+        height: 123
+      alignment: 9
+      pivot: {x: 0.5, y: 0.36585367}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a9443a40ef319d0800000000000000
+      internalID: -2804618847049180547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_Golem_death_74
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 354
+        width: 143
+        height: 123
+      alignment: 9
+      pivot: {x: 0.5, y: 0.36585367}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42e5ed62cd6654230800000000000000
+      internalID: 3622414571020377636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_Golem_death_77
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 194
+        width: 147
+        height: 124
+      alignment: 9
+      pivot: {x: 0.5, y: 0.36290324}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a0397de6bba56c10800000000000000
+      internalID: 2046230407866298534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old_Golem_death_83
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 34
+        width: 143
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 1.40625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a91c8f55d69ca480800000000000000
+      internalID: -8886562121533613660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 964b0f5ab116e594d9b0f09e4b3598f9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Old_Golem_death_0: -8795282582845764243
+      Old_Golem_death_1: -6637468490446954545
+      Old_Golem_death_10: 5122547999690301410
+      Old_Golem_death_11: 7955245570883658586
+      Old_Golem_death_12: -5049308175351559347
+      Old_Golem_death_13: -3947704314330719529
+      Old_Golem_death_14: 3083078265724179129
+      Old_Golem_death_15: 741868284556283329
+      Old_Golem_death_16: 1130496299415428255
+      Old_Golem_death_17: 653428804583460334
+      Old_Golem_death_18: -5761667462914042176
+      Old_Golem_death_19: 8501934890470046747
+      Old_Golem_death_2: -6710656760816753226
+      Old_Golem_death_20: -6245321413857388309
+      Old_Golem_death_21: -2524425726992394509
+      Old_Golem_death_22: -6373430114371541763
+      Old_Golem_death_23: -8054968379223925735
+      Old_Golem_death_24: -6926842407750073736
+      Old_Golem_death_25: -4923595328181657534
+      Old_Golem_death_26: 2309593141345960063
+      Old_Golem_death_27: -3854008949138424005
+      Old_Golem_death_28: -4993218253406382123
+      Old_Golem_death_29: 1977597479170639365
+      Old_Golem_death_3: -6969436019107603964
+      Old_Golem_death_30: -1667479706962381967
+      Old_Golem_death_31: 6965663832493191201
+      Old_Golem_death_32: -4969215375356003000
+      Old_Golem_death_33: 7967157771178050896
+      Old_Golem_death_34: 8060481647580418985
+      Old_Golem_death_35: 3640830320673033335
+      Old_Golem_death_36: 5200531615986308178
+      Old_Golem_death_37: -8892937053822038581
+      Old_Golem_death_38: -2985285924436276134
+      Old_Golem_death_39: 1646779214505777426
+      Old_Golem_death_4: 5564738261682950123
+      Old_Golem_death_40: -5522131898250531756
+      Old_Golem_death_41: 360955123639942289
+      Old_Golem_death_42: 6819056838626312110
+      Old_Golem_death_43: -3802943689663443459
+      Old_Golem_death_44: 3266088314007278944
+      Old_Golem_death_45: -2804618847049180547
+      Old_Golem_death_46: -5701843404980197998
+      Old_Golem_death_47: -8399421583856191969
+      Old_Golem_death_48: -1323825839843280778
+      Old_Golem_death_49: 6387804768860604232
+      Old_Golem_death_5: -931843399073966158
+      Old_Golem_death_50: 4694112654930354664
+      Old_Golem_death_51: -8084506096668456149
+      Old_Golem_death_52: 5861677889351114462
+      Old_Golem_death_53: 7980467525647999610
+      Old_Golem_death_54: 3499098438698347828
+      Old_Golem_death_55: -5238124740935116588
+      Old_Golem_death_56: -8775747917281217307
+      Old_Golem_death_57: -3998191475362183440
+      Old_Golem_death_58: 4621560293290350740
+      Old_Golem_death_59: 219718384344528568
+      Old_Golem_death_6: 2251715643841041659
+      Old_Golem_death_60: -6720268319019993273
+      Old_Golem_death_61: -6915461867703651645
+      Old_Golem_death_62: 4779333147332773834
+      Old_Golem_death_63: 5966596639662476259
+      Old_Golem_death_64: 8580987460073879676
+      Old_Golem_death_65: 7507147489324184253
+      Old_Golem_death_66: -6357491139852376086
+      Old_Golem_death_67: 2345397341563239325
+      Old_Golem_death_68: -4649176883606361177
+      Old_Golem_death_69: -7963890217293652660
+      Old_Golem_death_7: -4083904813159725749
+      Old_Golem_death_70: 5044464949179217360
+      Old_Golem_death_71: -4340064273345525982
+      Old_Golem_death_72: 4875011421619131615
+      Old_Golem_death_73: 8053448897766911912
+      Old_Golem_death_74: 3622414571020377636
+      Old_Golem_death_75: 7140959387317254712
+      Old_Golem_death_76: -2782433565277791790
+      Old_Golem_death_77: 2046230407866298534
+      Old_Golem_death_78: 1695713314136099199
+      Old_Golem_death_79: 3301357436417651757
+      Old_Golem_death_8: -7856400930752201174
+      Old_Golem_death_80: -8485541416728716237
+      Old_Golem_death_81: -8793952321872797917
+      Old_Golem_death_82: -837083306437821631
+      Old_Golem_death_83: -8886562121533613660
+      Old_Golem_death_84: 8107413186202751624
+      Old_Golem_death_9: 5653155384272450459
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

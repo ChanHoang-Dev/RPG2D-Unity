@@ -1,0 +1,479 @@
+fileFormatVersion: 2
+guid: 53d3e6e604e3a954088a956979a4dfae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3516707158278596077
+    second: SL_attack_2_0
+  - first:
+      213: 4995624364975686389
+    second: SL_attack_2_1
+  - first:
+      213: 2858484875899856827
+    second: SL_attack_2_2
+  - first:
+      213: 311627951596183520
+    second: SL_attack_2_3
+  - first:
+      213: -1166025952900086364
+    second: SL_attack_2_4
+  - first:
+      213: -5431845944837505657
+    second: SL_attack_2_5
+  - first:
+      213: 1280738571180992192
+    second: SL_attack_2_6
+  - first:
+      213: -3027650109652965295
+    second: SL_attack_2_7
+  - first:
+      213: 2312267106418742794
+    second: SL_attack_2_8
+  - first:
+      213: 3117160272823002061
+    second: SL_attack_2_9
+  - first:
+      213: 1092865754082881177
+    second: SL_attack_2_10
+  - first:
+      213: 8213161089331997098
+    second: SL_attack_2_11
+  - first:
+      213: -5381637251263521819
+    second: SL_attack_2_12
+  - first:
+      213: -8639054936291010999
+    second: SL_attack_2_13
+  - first:
+      213: 339470244646357182
+    second: SL_attack_2_14
+  - first:
+      213: -4756372478790593967
+    second: SL_attack_2_15
+  - first:
+      213: 8553053344737993476
+    second: SL_attack_2_16
+  - first:
+      213: 7293156637552108384
+    second: SL_attack_2_17
+  - first:
+      213: 7476884780466759183
+    second: SL_attack_2_18
+  - first:
+      213: -2466058311809078754
+    second: SL_attack_2_19
+  - first:
+      213: 1492858285008082100
+    second: SL_attack_2_20
+  - first:
+      213: -8001851812379983111
+    second: SL_attack_2_21
+  - first:
+      213: -4834411738437584108
+    second: SL_attack_2_22
+  - first:
+      213: 7317664190530575020
+    second: SL_attack_2_23
+  - first:
+      213: -776343789092713196
+    second: SL_attack_2_24
+  - first:
+      213: -3170636061966079065
+    second: SL_attack_2_25
+  - first:
+      213: -2235653748534436348
+    second: SL_attack_2_26
+  - first:
+      213: 2627808962440415304
+    second: SL_attack_2_27
+  - first:
+      213: 5768194800214031697
+    second: SL_attack_2_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SL_attack_2_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1815
+        width: 95
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de5e444378addc030800000000000000
+      internalID: 3516707158278596077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SL_attack_2_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1619
+        width: 96
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f289a954e5045540800000000000000
+      internalID: 4995624364975686389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SL_attack_2_2
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1423
+        width: 92
+        height: 89
+      alignment: 9
+      pivot: {x: 0.4347826, y: 0.5168539}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb766d789d06ba720800000000000000
+      internalID: 2858484875899856827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SL_attack_2_3
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1227
+        width: 103
+        height: 87
+      alignment: 9
+      pivot: {x: 0.3398058, y: 0.52873564}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef19fc88ff135400800000000000000
+      internalID: 311627951596183520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SL_attack_2_5
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1031
+        width: 122
+        height: 87
+      alignment: 9
+      pivot: {x: 0.28688523, y: 0.52873564}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d705f64e43e94b0800000000000000
+      internalID: -5431845944837505657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SL_attack_2_7
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 835
+        width: 128
+        height: 87
+      alignment: 9
+      pivot: {x: 0.2734375, y: 0.52873564}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15866f53440abf5d0800000000000000
+      internalID: -3027650109652965295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SL_attack_2_9
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 639
+        width: 132
+        height: 89
+      alignment: 9
+      pivot: {x: 0.3030303, y: 0.5168539}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc32391b0c0624b20800000000000000
+      internalID: 3117160272823002061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SL_attack_2_12
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 443
+        width: 134
+        height: 92
+      alignment: 9
+      pivot: {x: 0.35074627, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eb9d60ee659055b0800000000000000
+      internalID: -5381637251263521819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SL_attack_2_15
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 247
+        width: 135
+        height: 92
+      alignment: 9
+      pivot: {x: 0.34814814, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1521e3e4e68fdfdb0800000000000000
+      internalID: -4756372478790593967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SL_attack_2_22
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 51
+        width: 131
+        height: 92
+      alignment: 9
+      pivot: {x: 0.35877863, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41bf2704328b8ecb0800000000000000
+      internalID: -4834411738437584108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4ca26118603e85647a68e3c0ab8e80ad
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SL_attack_2_0: 3516707158278596077
+      SL_attack_2_1: 4995624364975686389
+      SL_attack_2_10: 1092865754082881177
+      SL_attack_2_11: 8213161089331997098
+      SL_attack_2_12: -5381637251263521819
+      SL_attack_2_13: -8639054936291010999
+      SL_attack_2_14: 339470244646357182
+      SL_attack_2_15: -4756372478790593967
+      SL_attack_2_16: 8553053344737993476
+      SL_attack_2_17: 7293156637552108384
+      SL_attack_2_18: 7476884780466759183
+      SL_attack_2_19: -2466058311809078754
+      SL_attack_2_2: 2858484875899856827
+      SL_attack_2_20: 1492858285008082100
+      SL_attack_2_21: -8001851812379983111
+      SL_attack_2_22: -4834411738437584108
+      SL_attack_2_23: 7317664190530575020
+      SL_attack_2_24: -776343789092713196
+      SL_attack_2_25: -3170636061966079065
+      SL_attack_2_26: -2235653748534436348
+      SL_attack_2_27: 2627808962440415304
+      SL_attack_2_28: 5768194800214031697
+      SL_attack_2_3: 311627951596183520
+      SL_attack_2_4: -1166025952900086364
+      SL_attack_2_5: -5431845944837505657
+      SL_attack_2_6: 1280738571180992192
+      SL_attack_2_7: -3027650109652965295
+      SL_attack_2_8: 2312267106418742794
+      SL_attack_2_9: 3117160272823002061
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
