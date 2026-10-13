@@ -23,4 +23,27 @@ public class CharacterData : ScriptableObject
     [Header("Stats")]
     [Tooltip("Chỉ số gốc (min/max) CỦA RIÊNG nhân vật này. Mỗi nhân vật có thể chỉnh khác nhau tùy độ mạnh/yếu.")]
     public PlayerStatsSO statsSO;
+    private void OnEnable()
+    {
+        Setup();
+    }
+ 
+    private void OnValidate()
+    {
+        Setup();
+    }
+ 
+    private void Setup()
+    {
+        if (playerStatsRuntime == null) playerStatsRuntime = new PlayerStatsRuntime();
+        playerStatsRuntime.Bind(this);
+        RefreshLevelCache();
+    }
+ 
+    /// <summary>Re-sync the public 'level' field from EXP. Called after loading / granting EXP.</summary>
+    public void RefreshLevelCache()
+    {
+        if (playerStatsRuntime != null)
+            level = playerStatsRuntime.Level;
+    }
 }

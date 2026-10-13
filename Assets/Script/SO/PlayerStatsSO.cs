@@ -34,6 +34,10 @@ public class PlayerStatsSO : ScriptableObject
     [Tooltip("Tỉ lệ xuất hiện đòn sát thương chuẩn — bỏ qua Armor/Giảm ST, không thể crit")]
     [Range(0f, 1f)] public float trueDamageChanceMin = 0f;
     [Range(0f, 1f)] public float trueDamageChanceMax = 0.15f;
+    [Header("Attack Speed")]
+    [Tooltip("Attack speed multiplier (1 = base speed). Level 1 uses Min, level 50 uses Max.")]
+    public float attackSpeedMin = 1.0f;
+    public float attackSpeedMax = 1.5f;
 
     [Header("Damage Roll")]
     [Tooltip("Random % dao động quanh dame gốc, vd 0.1 = ±10%")]

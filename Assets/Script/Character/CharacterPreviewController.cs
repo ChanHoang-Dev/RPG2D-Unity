@@ -206,9 +206,12 @@ public class CharacterPreviewController : MonoBehaviour
         if (currentCharacterData == null) return;
 
         if (!currentCharacterData.isUnlocked)
-            panelConfirmUnlock.SetActive(true);
-        else
-            GameSessionManager.Instance.SelectCharacter(currentCharacterData);
+        {
+            if (CharacterUnlockRules.CanUnlock(currentCharacterData))
+                panelConfirmUnlock.SetActive(true);
+            else
+                Debug.LogWarning($"[CharacterPreview] Nhân vật '{currentCharacterData.characterName}' chưa mở khóa và không đủ điều kiện mở khóa.");
+        }
     }
     private void OnConfirmUnlockClicked()
     {
@@ -343,7 +346,7 @@ public class CharacterPreviewController : MonoBehaviour
 
     private void OnEnable()
     {
-        CharacterUpgradeController.OnCharacterLevelChanged += UpdateCharacterLevelText;
+        CharacterProgression.OnCharacterLevelChanged += UpdateCharacterLevelText;
         GameSessionManager.OnCharacterChanged += OnGameStateChanged;
         GameSessionManager.OnCharacterUnlocked += OnGameStateChanged;
     }
@@ -353,7 +356,7 @@ public class CharacterPreviewController : MonoBehaviour
         RefreshActionSelectChar(currentCharacterData);
     }
 
-    private void UpdateCharacterLevelText(CharacterData data)
+    private void UpdateCharacterLevelText(CharacterData data, int oldLevel, int newLevel)
     {
         if (currentCharacterData != null && data == currentCharacterData)
         {
@@ -366,7 +369,7 @@ public class CharacterPreviewController : MonoBehaviour
 
     private void OnDisable()
     {
-        CharacterUpgradeController.OnCharacterLevelChanged -= UpdateCharacterLevelText;
+        CharacterProgression.OnCharacterLevelChanged += UpdateCharacterLevelText;
         GameSessionManager.OnCharacterChanged -= OnGameStateChanged;
         GameSessionManager.OnCharacterUnlocked -= OnGameStateChanged;
         if (sequenceRoutine != null) StopCoroutine(sequenceRoutine);

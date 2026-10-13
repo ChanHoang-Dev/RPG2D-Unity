@@ -9,4 +9,5 @@ public interface ICombatStats
     float DamageRollPercentMax { get; }
     float ArmorPenetration { get; }
     float TrueDamageChance { get; }
+    float AttackSpeed { get; }
 }

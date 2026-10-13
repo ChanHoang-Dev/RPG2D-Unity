@@ -19,6 +19,10 @@ public class Health : MonoBehaviour
 
     private int dieCallCount = 0;
 
+    // Cache để tránh GetComponent mỗi lần nhận damage
+    private EnemyProperties cachedEnemyProps;
+    private FlyingEnemyProperties cachedFlyingEnemy;
+
     // NEW: bắn khi nhận damage để UI popup số lên màn hình biết crit/miss
     public System.Action<DamageResult> OnDamageTaken;
 
@@ -40,6 +44,9 @@ public class Health : MonoBehaviour
             if (animator == null)
                 animator = GetComponentInChildren<Animator>();
         }
+
+        cachedEnemyProps = GetComponent<EnemyProperties>();
+        cachedFlyingEnemy = GetComponent<FlyingEnemyProperties>();
     }
 #if UNITY_EDITOR
     private void OnValidate()
@@ -82,10 +89,8 @@ public class Health : MonoBehaviour
         }
         else
         {
-            EnemyProperties skeleton = GetComponent<EnemyProperties>();
-            if (skeleton != null) skeleton.CancelAttack();
-            FlyingEnemyProperties flyingEnemy = GetComponent<FlyingEnemyProperties>();
-            if(flyingEnemy != null) flyingEnemy.CancelAttack();
+            if (cachedEnemyProps != null) cachedEnemyProps.CancelAttack();
+            if (cachedFlyingEnemy != null) cachedFlyingEnemy.CancelAttack();
 
             if (animator != null)
             {

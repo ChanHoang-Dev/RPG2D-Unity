@@ -7,13 +7,7 @@ public class CharacterSaveData
 {
     public string characterId;
     public bool isUnlocked;
-    public int hpLevel;
-    public int atkLevel;
-    public int defLevel;
-    public int critLevel;
-    public int armorPenLevel;
-    public int trueDamageLevel;
-    public int dmgReduceLevel;
+    public int totalExp; // level is derived from this
 }
 
 [System.Serializable]
@@ -46,13 +40,7 @@ public static class CharacterSaveManager
             {
                 characterId = c.characterId,
                 isUnlocked = c.isUnlocked,
-                hpLevel = c.playerStatsRuntime.hpLevel,
-                atkLevel = c.playerStatsRuntime.atkLevel,
-                defLevel = c.playerStatsRuntime.defLevel,
-                critLevel = c.playerStatsRuntime.critLevel,
-                armorPenLevel = c.playerStatsRuntime.armorPenLevel,
-                trueDamageLevel = c.playerStatsRuntime.trueDamageLevel,
-                dmgReduceLevel = c.playerStatsRuntime.dmgReduceLevel,
+                totalExp = c.playerStatsRuntime.TotalExp,
             });
         }
 
@@ -62,10 +50,10 @@ public static class CharacterSaveManager
     }
 
     /// <summary>
-    /// Đọc file JSON và áp dữ liệu ngược lại vào danh sách CharacterData đang có trong game.
-    /// Gọi hàm này SAU khi danh sách CharacterData (asset reference, tên, sprite...) đã được khởi tạo sẵn.
+    /// Reads the JSON file and applies it to the CharacterData list.
+    /// Old saves (with hpLevel/atkLevel...) still load: unknown fields are ignored and totalExp defaults to 0 (level 1).
     /// </summary>
-    /// <returns>characterId của nhân vật được chọn lần cuối, hoặc null nếu chưa có save.</returns>
+    /// <returns>characterId of the last selected character, or null if there is no save.</returns>
     public static string Load(List<CharacterData> allCharacters)
     {
         if (!File.Exists(SavePath))
@@ -77,7 +65,6 @@ public static class CharacterSaveManager
         string json = File.ReadAllText(SavePath);
         GameSaveData saveData = JsonUtility.FromJson<GameSaveData>(json);
 
-        // Map nhanh id -> CharacterData để tra cứu O(1) thay vì lặp lồng nhau
         Dictionary<string, CharacterData> lookup = new Dictionary<string, CharacterData>();
         foreach (var c in allCharacters)
         {
@@ -94,17 +81,8 @@ public static class CharacterSaveManager
             }
 
             target.isUnlocked = saved.isUnlocked;
-            target.playerStatsRuntime.hpLevel = saved.hpLevel;
-            target.playerStatsRuntime.atkLevel = saved.atkLevel;
-            target.playerStatsRuntime.defLevel = saved.defLevel;
-            target.playerStatsRuntime.critLevel = saved.critLevel;
-            target.playerStatsRuntime.armorPenLevel = saved.armorPenLevel;
-            target.playerStatsRuntime.trueDamageLevel = saved.trueDamageLevel;
-            target.playerStatsRuntime.dmgReduceLevel = saved.dmgReduceLevel;
-
-            // Đồng bộ luôn level hiển thị từ stat vừa load, tránh phải chờ SelectCharacter gọi lại
-            if (target.statsSO != null)
-                target.level = target.playerStatsRuntime.GetTotalLevelCharacter();
+            target.playerStatsRuntime.SetTotalExp(saved.totalExp);
+            target.RefreshLevelCache();
         }
 
         Debug.Log("[Save] Đã load dữ liệu thành công.");

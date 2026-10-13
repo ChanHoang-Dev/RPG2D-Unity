@@ -1,88 +1,111 @@
+using System;
 using UnityEngine;
 
-[System.Serializable]
+/// <summary>
+/// Runtime progression of one character. Level is DERIVED from totalExp (single source of truth).
+/// Every stat = Lerp(min, max, (level-1)/(MaxLevel-1)) + milestone bonus.
+/// Level 1 -> SO min values, Level 50 -> SO max values.
+/// </summary>
+[Serializable]
 public class PlayerStatsRuntime
 {
-    // Level nâng cấp cho từng chỉ số, 0 = min, upgradeMaxLevel = max
-    public int hpLevel;
-    public int atkLevel;
-    public int defLevel;
-    public int critLevel;
-    public int armorPenLevel;
-    public int trueDamageLevel;
-    public int dmgReduceLevel;
+    [SerializeField] private int totalExp;
 
-    public const int UPGRADE_MAX_LEVEL = 10;
-    public const int STAT_COUNT = 7;
-    public const int MAX_TOTAL_LEVEL_CHARACTER = UPGRADE_MAX_LEVEL * STAT_COUNT;
+    // Needed so milestone buffs can differ per character. Set by CharacterData.OnEnable / OnValidate.
+    [NonSerialized] private CharacterData owner;
 
-    private static float Lerp(float min, float max, int level)
-        => Mathf.Lerp(min, max, (float)level / UPGRADE_MAX_LEVEL);
-    public int GetMaxHealth(PlayerStatsSO so) => GetMaxHealth(so, hpLevel);
-    public int GetAttack(PlayerStatsSO so) => GetAttack(so, atkLevel);
-    public int GetDefense(PlayerStatsSO so) => GetDefense(so, defLevel);
-    public float GetCritChance(PlayerStatsSO so) => GetCritChance(so, critLevel);
-    public float GetCritMultiplier(PlayerStatsSO so) => GetCritMultiplier(so, critLevel);
-    public float GetArmorPen(PlayerStatsSO so) => GetArmorPen(so, armorPenLevel);
-    public float GetTrueDamageChance(PlayerStatsSO so) => GetTrueDamageChance(so, trueDamageLevel);
-    public float GetDamageReduction(PlayerStatsSO so) => GetDamageReduction(so, dmgReduceLevel);
+    public void Bind(CharacterData characterOwner) => owner = characterOwner;
 
-    public int GetMaxHealth(PlayerStatsSO so, int level) => Mathf.RoundToInt(Lerp(so.hpMin, so.hpMax, level));
-    public int GetAttack(PlayerStatsSO so, int level) => Mathf.RoundToInt(Lerp(so.atkMin, so.atkMax, level));
-    public int GetDefense(PlayerStatsSO so, int level) => Mathf.RoundToInt(Lerp(so.defMin, so.defMax, level));
-    public float GetCritChance(PlayerStatsSO so, int level) => Lerp(so.critChanceMin, so.critChanceMax, level);
-    public float GetCritMultiplier(PlayerStatsSO so, int level) => Lerp(so.critMultiplierMin, so.critMultiplierMax, level);
-    public float GetArmorPen(PlayerStatsSO so, int level) => Lerp(so.armorPenMin, so.armorPenMax, level);
-    public float GetTrueDamageChance(PlayerStatsSO so, int level) => Lerp(so.trueDamageChanceMin, so.trueDamageChanceMax, level);
-    public float GetDamageReduction(PlayerStatsSO so, int level) => Lerp(so.dmgReduceMin, so.dmgReduceMax, level);
-    public int GetTotalLevel()
+    // ---- Level / EXP ----
+    public int TotalExp => totalExp;
+    public int Level => CharacterProgression.LevelFromTotalExp(totalExp);
+    public bool IsMaxLevel => Level >= CharacterProgression.MaxLevel;
+    public int ExpIntoCurrentLevel => IsMaxLevel ? 0 : totalExp - CharacterProgression.TotalExpForLevel(Level);
+    public int ExpNeededForNextLevel => IsMaxLevel ? 0 : CharacterProgression.ExpToNextLevel(Level);
+    public float LevelProgress01 => IsMaxLevel ? 1f : (float)ExpIntoCurrentLevel / Mathf.Max(1, ExpNeededForNextLevel);
+
+    public void SetTotalExp(int value)
     {
-        return hpLevel + atkLevel + defLevel + critLevel + armorPenLevel + trueDamageLevel + dmgReduceLevel;
+        totalExp = Mathf.Clamp(value, 0, CharacterProgression.MaxTotalExp);
     }
-    public int GetTotalLevelCharacter(int maxCharacterLevel = MAX_TOTAL_LEVEL_CHARACTER + 1)
+
+    public void AddExperience(int amount)
     {
-        int totalLevel = GetTotalLevel();
-        float t = (float)totalLevel / MAX_TOTAL_LEVEL_CHARACTER;
-        return Mathf.RoundToInt(t * (maxCharacterLevel - 1)) + 1;
+        if (amount <= 0) return;
+        long sum = (long)totalExp + amount;
+        totalExp = (int)Math.Min(sum, CharacterProgression.MaxTotalExp);
     }
-    public void UpgradeStat(StatType type)
+
+    public void ResetProgress() => totalExp = 0;
+
+    // ---- Helpers ----
+    private static float T(int level) => Mathf.InverseLerp(1, CharacterProgression.MaxLevel, level);
+    private StatBonus Bonus(int level) => CharacterProgression.GetTotalMilestoneBonus(owner, level);
+
+    // ---- Stats (current level) ----
+    public int GetMaxHealth(PlayerStatsSO so) => GetMaxHealth(so, Level);
+    public int GetAttack(PlayerStatsSO so) => GetAttack(so, Level);
+    public int GetDefense(PlayerStatsSO so) => GetDefense(so, Level);
+    public float GetCritChance(PlayerStatsSO so) => GetCritChance(so, Level);
+    public float GetCritMultiplier(PlayerStatsSO so) => GetCritMultiplier(so, Level);
+    public float GetDamageReduction(PlayerStatsSO so) => GetDamageReduction(so, Level);
+    public float GetArmorPen(PlayerStatsSO so) => GetArmorPen(so, Level);
+    public float GetTrueDamageChance(PlayerStatsSO so) => GetTrueDamageChance(so, Level);
+    public float GetAttackSpeed(PlayerStatsSO so) => GetAttackSpeed(so, Level);
+
+    // ---- Stats (explicit level, handy for UI previews) ----
+    public int GetMaxHealth(PlayerStatsSO so, int level)
     {
-        switch (type)
-        {
-            case StatType.HP: hpLevel = Mathf.Min(hpLevel + 1, UPGRADE_MAX_LEVEL); break;
-            case StatType.Attack: atkLevel = Mathf.Min(atkLevel + 1, UPGRADE_MAX_LEVEL); break;
-            case StatType.Defense: defLevel = Mathf.Min(defLevel + 1, UPGRADE_MAX_LEVEL); break;
-            case StatType.Crit: critLevel = Mathf.Min(critLevel + 1, UPGRADE_MAX_LEVEL); break;
-            case StatType.ArmorPenetration: armorPenLevel = Mathf.Min(armorPenLevel + 1, UPGRADE_MAX_LEVEL); break;
-            case StatType.TrueDamage: trueDamageLevel = Mathf.Min(trueDamageLevel + 1, UPGRADE_MAX_LEVEL); break;
-            case StatType.DamageReduction: dmgReduceLevel = Mathf.Min(dmgReduceLevel + 1, UPGRADE_MAX_LEVEL); break;
-        }
+        float v = Mathf.Lerp(so.hpMin, so.hpMax, T(level));
+        return Mathf.RoundToInt(v * (1f + Bonus(level).hpPercent));
     }
-    public void ResetStats(StatType type)
+
+    public int GetAttack(PlayerStatsSO so, int level)
     {
-        switch (type)
-        {
-            case StatType.HP: hpLevel = 0; break;
-            case StatType.Attack: atkLevel = 0; break;
-            case StatType.Defense: defLevel = 0; break;
-            case StatType.Crit: critLevel = 0; break;
-            case StatType.ArmorPenetration: armorPenLevel = 0; break;
-            case StatType.TrueDamage: trueDamageLevel = 0; break;
-            case StatType.DamageReduction: dmgReduceLevel = 0; break;
-        }
+        float v = Mathf.Lerp(so.atkMin, so.atkMax, T(level));
+        return Mathf.RoundToInt(v * (1f + Bonus(level).atkPercent));
     }
-    #region [Dev/Test]
-    public void ResetAllStats()
+
+    public int GetDefense(PlayerStatsSO so, int level)
     {
-        hpLevel = 0;
-        atkLevel = 0;
-        defLevel = 0;
-        critLevel = 0;
-        armorPenLevel = 0;
-        trueDamageLevel = 0;
-        dmgReduceLevel = 0;
+        float v = Mathf.Lerp(so.defMin, so.defMax, T(level));
+        return Mathf.RoundToInt(v * (1f + Bonus(level).defPercent));
     }
-    #endregion
+
+    public float GetCritChance(PlayerStatsSO so, int level)
+    {
+        float v = Mathf.Lerp(so.critChanceMin, so.critChanceMax, T(level)) + Bonus(level).critChanceFlat;
+        return Mathf.Clamp01(v);
+    }
+
+    public float GetCritMultiplier(PlayerStatsSO so, int level)
+    {
+        float v = Mathf.Lerp(so.critMultiplierMin, so.critMultiplierMax, T(level)) + Bonus(level).critMultiplierFlat;
+        return Mathf.Max(1f, v);
+    }
+
+    public float GetDamageReduction(PlayerStatsSO so, int level)
+    {
+        float v = Mathf.Lerp(so.dmgReduceMin, so.dmgReduceMax, T(level)) + Bonus(level).dmgReduceFlat;
+        return Mathf.Clamp01(v);
+    }
+
+    public float GetArmorPen(PlayerStatsSO so, int level)
+    {
+        float v = Mathf.Lerp(so.armorPenMin, so.armorPenMax, T(level)) + Bonus(level).armorPenFlat;
+        return Mathf.Clamp01(v);
+    }
+
+    public float GetTrueDamageChance(PlayerStatsSO so, int level)
+    {
+        float v = Mathf.Lerp(so.trueDamageChanceMin, so.trueDamageChanceMax, T(level)) + Bonus(level).trueDamageFlat;
+        return Mathf.Clamp01(v);
+    }
+
+    /// <summary>Attack speed multiplier (1 = base speed).</summary>
+    public float GetAttackSpeed(PlayerStatsSO so, int level)
+    {
+        float v = Mathf.Lerp(so.attackSpeedMin, so.attackSpeedMax, T(level));
+        return Mathf.Max(0.1f, v * (1f + Bonus(level).attackSpeedPercent));
+    }
 }
-
-public enum StatType { HP, Attack, Defense, Crit, DamageReduction, ArmorPenetration, TrueDamage }

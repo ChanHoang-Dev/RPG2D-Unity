@@ -145,6 +145,7 @@ public class CombatEntity : MonoBehaviour
         public float DamageRollPercentMax => so.damageRollPercentMax;
         public float ArmorPenetration => rt.GetArmorPen(so);
         public float TrueDamageChance => rt.GetTrueDamageChance(so);
+        public float AttackSpeed => rt.GetAttackSpeed(so);
     }
 
     private readonly struct EnemyCombatStatsAdapter : ICombatStats
@@ -168,5 +169,6 @@ public class CombatEntity : MonoBehaviour
         public float DamageRollPercentMax => so.damageRollPercentMax;
         public float ArmorPenetration => 0f;
         public float TrueDamageChance => 0f;
+        public float AttackSpeed => 1f;
     }
 }

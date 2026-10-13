@@ -1,6 +1,6 @@
 using UnityEngine;
 [RequireComponent(typeof(PlayerMovement))]
-public class PlayerRangedAttack : MonoBehaviour
+public class PlayerRangeAttack : MonoBehaviour
 {
     [Header("SpearThrow")]
     [SerializeField] private GameObject spearPrefab;

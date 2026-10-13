@@ -78,6 +78,11 @@ public class GameSessionManager : MonoBehaviour
             Debug.LogWarning($"[GameSession] Nhân vật '{data.characterName}' đã unlock rồi.");
             return;
         }
+        if (!CharacterUnlockRules.CanUnlock(data))
+        {
+            Debug.LogWarning($"[GameSession] Nhân vật '{data.characterName}' chưa đủ điều kiện unlock.");
+            return;
+        }
         data.isUnlocked = true;
         SaveGame();
         OnCharacterUnlocked?.Invoke(data);
@@ -115,6 +120,12 @@ public class GameSessionManager : MonoBehaviour
             bool IsSelected = SelectedCharacter != null && slot.characterData.characterId == SelectedCharacter.characterId;
             slot.RefreshState(IsSelected);
         }
+    }
+    // Ghi nhận kinh nghiệm sau mỗi stage
+    public void AwardStageExperience(int expEarned)
+    {
+        CharacterProgression.DistributeStageExperience(allCharacters, SelectedCharacter, expEarned);
+        SaveGame();
     }
     public CharacterData GetCharacterByName(string name)
     {
