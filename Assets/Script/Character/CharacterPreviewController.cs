@@ -369,7 +369,7 @@ public class CharacterPreviewController : MonoBehaviour
 
     private void OnDisable()
     {
-        CharacterProgression.OnCharacterLevelChanged += UpdateCharacterLevelText;
+        CharacterProgression.OnCharacterLevelChanged -= UpdateCharacterLevelText;
         GameSessionManager.OnCharacterChanged -= OnGameStateChanged;
         GameSessionManager.OnCharacterUnlocked -= OnGameStateChanged;
         if (sequenceRoutine != null) StopCoroutine(sequenceRoutine);

@@ -59,7 +59,7 @@ public class LevelSessionManager : MonoBehaviour
         if (starsResult > level.starsEarned)
             level.starsEarned = starsResult;
 
-        if (starsResult >= 1)
+        if (starsResult >= (int)Difficulty.Medium)
         {
             LevelData nextLevel = GetLevelByIndex(level.levelIndex + 1);
             if (nextLevel != null && !nextLevel.isUnlocked)
