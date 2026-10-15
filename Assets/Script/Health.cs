@@ -26,6 +26,8 @@ public class Health : MonoBehaviour
     // NEW: bắn khi nhận damage để UI popup số lên màn hình biết crit/miss
     public System.Action<DamageResult> OnDamageTaken;
 
+    public System.Action<int> OnKilled; // bắn khi quái chết để UI popup EXP lên màn hình
+
     void Awake()
     {
         if (combatEntity == null)
@@ -116,7 +118,12 @@ public class Health : MonoBehaviour
         isDead = true;
 
         if (combatEntity != null)
-            StageExpTracker.RegisterKill(combatEntity.GetExpReward());
+        {
+            int reward = combatEntity.GetExpReward();
+            bool counted = StageExpTracker.RegisterKill(reward);
+            if (counted && reward > 0)
+                OnKilled?.Invoke(StageExpTracker.GetDisplayExp(reward));
+        }
 
         if (animator != null)
         {

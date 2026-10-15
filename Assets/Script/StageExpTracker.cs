@@ -32,14 +32,18 @@ public static class StageExpTracker
         committed = false;
     }
 
-    public static void RegisterKill(int exp)
+    public static bool RegisterKill(int exp)
     {
-        if (committed) return; // người chơi đã thua / màn đã kết thúc -> không tính nữa
+        if (committed) return false; // người chơi đã thua / màn đã kết thúc -> không tính nữa
         KillCount++;
         BaseExp += Mathf.Max(0, exp);
         OnExpChanged?.Invoke(BaseExp, KillCount);
+        return true;
     }
-
+    public static int GetDisplayExp(int baseExp)
+    {
+        return Mathf.RoundToInt(baseExp * DifficultyScaling.Current().exp);
+    }
     /// <summary>Tổng EXP sau khi nhân hệ số độ khó.</summary>
     public static int GetFinalExp()
     {

@@ -9,6 +9,8 @@ public class DamagePopupSpawner : MonoBehaviour
     [Header("Spawn Position")]
     [SerializeField] private Vector3 spawnOffset = new Vector3(0f, 1.2f, 0f);
     [SerializeField] private float randomOffsetRange = 0.3f; // tránh số đè lên nhau khi trúng liên tục
+    [Tooltip("EXP hiện cao hơn số sát thương để không đè lên đòn kết liễu")]
+    [SerializeField] private Vector3 expSpawnOffset = new Vector3(0f, 1.9f, 0f);
 
     private PlayerHealth playerHealth;
     private Health enemyHealth;
@@ -22,13 +24,21 @@ public class DamagePopupSpawner : MonoBehaviour
     void OnEnable()
     {
         if (playerHealth != null) playerHealth.OnDamageTaken += SpawnPopup;
-        if (enemyHealth != null) enemyHealth.OnDamageTaken += SpawnPopup;
+        if (enemyHealth != null) 
+        {
+            enemyHealth.OnDamageTaken += SpawnPopup;
+            enemyHealth.OnKilled += SpawnExpPopup; // Gọi khi quái chết để hiện EXP
+        }
     }
 
     void OnDisable()
     {
         if (playerHealth != null) playerHealth.OnDamageTaken -= SpawnPopup;
-        if (enemyHealth != null) enemyHealth.OnDamageTaken -= SpawnPopup;
+        if (enemyHealth != null) 
+        {
+            enemyHealth.OnDamageTaken -= SpawnPopup;
+            enemyHealth.OnKilled -= SpawnExpPopup;
+        }
     }
 
     private void SpawnPopup(DamageResult result)
@@ -40,5 +50,12 @@ public class DamagePopupSpawner : MonoBehaviour
 
         DamagePopup popup = Instantiate(popupPrefab, spawnPos, Quaternion.identity);
         popup.Setup(result);
+    }
+     private void SpawnExpPopup(int exp)
+    {
+        if (popupPrefab == null || exp <= 0) return;
+ 
+        DamagePopup popup = Instantiate(popupPrefab, transform.position + expSpawnOffset, Quaternion.identity);
+        popup.SetupExp(exp);
     }
 }

@@ -142,9 +142,9 @@ public class PlayerCombat : MonoBehaviour
         animator.ResetTrigger("Attack");
         animator.SetTrigger("Attack");
 
-        // lockDuration lấy trực tiếp từ Inspector, không tra cứu theo tên clip
-        // -> không thể nhầm với animation của nhân vật khác dù trùng tên clip
-        controller.StartActionLock(data.lockDuration);
+        animator.speed = attackSpeed;
+        float scaledLock = data.lockDuration / attackSpeed;
+        controller.StartActionLock(scaledLock);
 
         // --- FAIL-SAFE ---
         // Nếu vì lý do gì đó (state trùng tên với nhân vật khác, Any State transition đá lệch,
@@ -154,7 +154,7 @@ public class PlayerCombat : MonoBehaviour
         attackToken++;
         int myToken = attackToken;
         CancelInvoke(nameof(ForceResetAttackStateInvokeWrapper));
-        Invoke(nameof(ForceResetAttackStateInvokeWrapper), data.lockDuration + 0.1f);
+        Invoke(nameof(ForceResetAttackStateInvokeWrapper), scaledLock + 0.1f);
         _pendingResetToken = myToken;
     }
 

@@ -211,8 +211,8 @@ public class CombatEntity : MonoBehaviour
             this.defMul = defMul;
         }
 
-        public int Attack => Mathf.RoundToInt(so.attack * attMul);
-        public int Defense => Mathf.RoundToInt(so.defense * defMul);
+        public int Attack => Mathf.RoundToInt(so.GetAttack(level) * attMul);
+        public int Defense => Mathf.RoundToInt(so.GetDefense(level) * defMul);
         public float CritChance => so.critChance;
         public float CritMultiplier => so.critMultiplier;
         public float DamageReduction => 0f;
