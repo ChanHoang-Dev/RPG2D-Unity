@@ -68,7 +68,7 @@ public class LevelSessionManager : MonoBehaviour
                 OnLevelStateChanged?.Invoke(nextLevel);
             }
         }
-
+        StageExpTracker.Commit(); // chốt EXP của màn chơi trước khi lưu trạng thái level
         LevelSaveManager.Save(allLevels);
         OnLevelStateChanged?.Invoke(level);
     }

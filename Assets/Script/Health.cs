@@ -115,6 +115,9 @@ public class Health : MonoBehaviour
         dieCallCount++;
         isDead = true;
 
+        if (combatEntity != null)
+            StageExpTracker.RegisterKill(combatEntity.GetExpReward());
+
         if (animator != null)
         {
             animator.SetBool(IS_DEAD_BOOL, true);
@@ -125,7 +128,7 @@ public class Health : MonoBehaviour
         EnemyProperties chase = GetComponent<EnemyProperties>();
         if (chase != null) chase.enabled = false;
         FlyingEnemyProperties flyingEnemy = GetComponent<FlyingEnemyProperties>();
-        if(flyingEnemy != null) flyingEnemy.enabled = false;
+        if (flyingEnemy != null) flyingEnemy.enabled = false;
 
         Destroy(gameObject, 5f);
     }

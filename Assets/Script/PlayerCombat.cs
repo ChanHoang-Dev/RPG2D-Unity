@@ -38,7 +38,13 @@ public class PlayerCombat : MonoBehaviour
 
     [Tooltip("Đánh hết đòn cuối rồi bấm tiếp có quay vòng lại đòn 1 không, hay phải thả tay ra đánh lại từ đầu")]
     public bool loopComboAtEnd = false;
-
+    [Header("Attack Speed")]
+    [Tooltip("Lấy attack speed của nhân vật từ CombatEntity (level càng cao càng nhanh). Tự tìm nếu để trống.")]
+    [SerializeField] private CombatEntity combatEntity;
+    [SerializeField] private float minAttackSpeed = 0.5f;
+    [SerializeField] private float maxAttackSpeed = 3f;
+    private float attackSpeed = 1f;
+    public float AttackSpeed => attackSpeed;
     private PlayerController controller;
     private Animator animator;
 
@@ -58,11 +64,13 @@ public class PlayerCombat : MonoBehaviour
         controller = GetComponent<PlayerController>();
 
         if (weaponHitbox == null) weaponHitbox = GetComponentInChildren<WeaponHitbox>();
+        if (combatEntity == null) combatEntity = GetComponent<CombatEntity>();
     }
 
     void Start()
     {
         animator = controller.Animator;
+        RefreshAttackSpeed();
     }
 
     /// <summary>Gọi từ PlayerController.Update() mỗi frame — xử lý input J.</summary>
@@ -111,6 +119,7 @@ public class PlayerCombat : MonoBehaviour
             isAttacking = false;
             currentComboIndex = 0;
             comboInputBuffered = false;
+            ResetAnimatorSpeed();
 
             // FAIL-SAFE: đảm bảo hitbox đã tắt khi animation Attack thực sự kết thúc, phòng trường hợp
             // Animation Event DisableHitbox() bị bỏ lỡ (ví dụ animation kết thúc đúng lúc frame đó bị skip).
@@ -166,6 +175,7 @@ public class PlayerCombat : MonoBehaviour
         isAttacking = false;
         currentComboIndex = 0;
         comboInputBuffered = false;
+        ResetAnimatorSpeed();
 
         // FAIL-SAFE: đây đúng là trường hợp Animator không bao giờ chạy tới Animation Event
         // DisableHitbox() (state trùng tên, transition đá lệch...). Tắt cứng tại đây để hitbox
@@ -221,13 +231,24 @@ public class PlayerCombat : MonoBehaviour
         comboInputBuffered = false;
         attackToken++; // vô hiệu hoá mọi ForceResetAttackState đang chờ từ đòn trước đó
         CancelInvoke(nameof(ForceResetAttackStateInvokeWrapper));
+        ResetAnimatorSpeed();
 
         // FAIL-SAFE: nếu animation Attack bị cắt ngang giữa chừng (ví dụ do Hurt/Death chen vào)
         // trước khi kịp chạy tới Animation Event DisableHitbox(), collider sẽ bị kẹt bật mãi mãi.
         // Luôn tắt cứng tại đây để đảm bảo không còn hitbox nào sót lại sau khi combo bị huỷ.
         DisableWeaponHitbox();
     }
+    public void RefreshAttackSpeed()
+    {
+        float value = combatEntity != null ? combatEntity.GetAttackSpeed() : 1f;
+        attackSpeed = Mathf.Clamp(value, minAttackSpeed, maxAttackSpeed);
+    }
 
+    // animator.speed chỉ được tăng trong lúc đánh. Ngoài lúc đánh (chạy, nhảy, hurt, chết) luôn là 1.
+    private void ResetAnimatorSpeed()
+    {
+        if (animator != null) animator.speed = 1f;
+    }
     public void EnableWeaponHitbox()
     {
         if (weaponHitbox != null)

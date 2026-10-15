@@ -12,6 +12,7 @@ public class StatsPanelUI : MonoBehaviour
     public TextMeshProUGUI armorPenText;
     public TextMeshProUGUI trueDamageText;
     public TextMeshProUGUI dmgReduceText;
+    public TextMeshProUGUI attackSpeedText;
 
     public void DisplayStats(CharacterData character, PlayerStatsSO so)
     {
@@ -25,5 +26,6 @@ public class StatsPanelUI : MonoBehaviour
         if (armorPenText != null) armorPenText.text = $"ARMOR PEN: {stats.GetArmorPen(so) * 100f:0.#}%";
         if (trueDamageText != null) trueDamageText.text = $"TRUE DMG: {stats.GetTrueDamageChance(so) * 100f:0.#}%";
         if (dmgReduceText != null) dmgReduceText.text = $"DMG REDUCE: {stats.GetDamageReduction(so) * 100f:0.#}%";
-    }
+        if (attackSpeedText != null) attackSpeedText.text = $"ATK SPEED: {stats.GetAttackSpeed(so):0.00}x";    
+    }   
 }

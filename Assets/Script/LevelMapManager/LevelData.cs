@@ -12,7 +12,9 @@ public class LevelData : ScriptableObject
     public bool isUnlocked;
     [Range(0, 3)]
     public int starsEarned;
-
+    [Header("Enemy Level (quái sinh ra random trong khoảng này)")]
+    [Min(1)] public int enemyLevelMin = 1;
+    [Min(1)] public int enemyLevelMax = 1;
     [Header("Scene")]
     public string sceneNameToLoad;
 

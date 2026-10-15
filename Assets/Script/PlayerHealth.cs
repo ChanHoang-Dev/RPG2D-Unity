@@ -11,7 +11,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private int currentHealth;
 
     [Header("Combat Stats")]
-    [SerializeField] private CombatEntity combatEntity; // NEW: lấy maxHealth từ PlayerStatsSO + Runtime
+    [SerializeField] private CombatEntity combatEntity; 
 
     [Header("Hurt")]
     [Tooltip("Thời lượng khoá hành động khi bị đánh trúng (giây)")]
@@ -132,6 +132,7 @@ public class PlayerHealth : MonoBehaviour
         animator.SetTrigger("Death");
         rb.linearVelocity = Vector2.zero;
 
+        StageExpTracker.Commit(); // chốt EXP ngay khi Player chết, tránh trường hợp quái còn sống nhưng Player đã out
         OnDied?.Invoke();
     }
 }

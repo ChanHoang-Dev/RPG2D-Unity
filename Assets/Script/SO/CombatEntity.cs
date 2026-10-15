@@ -10,10 +10,13 @@ public class CombatEntity : MonoBehaviour
 
     [Header("Enemy mode")]
     [SerializeField] private EnemyStatsSO enemySO;
+    [Tooltip("Level dùng khi chạy scene trực tiếp (không đi qua menu chọn màn / không có LevelSessionManager).")]
+    [SerializeField] private int testEnemyLevel = 1;
 
     private CharacterData playerCharacter;
     private PlayerStatsSO playerSO;
     private bool isInitialized = false;
+    private int enemyLevel = 0; // lazy roll 1 lần duy nhất
 
     public PlayerStatsRuntime PlayerRuntime => playerCharacter != null ? playerCharacter.playerStatsRuntime : null;
 
@@ -28,10 +31,55 @@ public class CombatEntity : MonoBehaviour
     }
     private void Start()
     {
-        if( kind == EntityKind.Enemy)
+        if (kind == EntityKind.Enemy)
         {
             LogEnemyStats();
         }
+    }
+    /// <summary>Level hiện tại: nhân vật = level theo EXP, quái = level roll theo màn chơi.</summary>
+    public int Level
+    {
+        get
+        {
+            if (kind == EntityKind.Player)
+                return playerCharacter != null ? playerCharacter.level : 1;
+            return EnemyLevel;
+        }
+    }
+
+    // Roll 1 lần duy nhất (lazy) để mọi nơi gọi GetMaxHealth/GetStats đều thấy cùng một level
+    private int EnemyLevel
+    {
+        get
+        {
+            if (enemyLevel <= 0) enemyLevel = RollEnemyLevel();
+            return enemyLevel;
+        }
+    }
+
+    private int RollEnemyLevel()
+    {
+        LevelData stage = LevelSessionManager.Instance != null ? LevelSessionManager.Instance.currentLevel : null;
+
+        int min = stage != null ? stage.enemyLevelMin : testEnemyLevel;
+        int max = stage != null ? stage.enemyLevelMax : testEnemyLevel;
+        if (max < min) max = min;
+
+        return Mathf.Clamp(Random.Range(min, max + 1), 1, EnemyStatsSO.MaxLevel);
+    }
+
+    /// <summary>EXP quái này cho khi bị tiêu diệt (chưa nhân hệ số độ khó). Player trả về 0.</summary>
+    public int GetExpReward()
+    {
+        if (kind != EntityKind.Enemy || enemySO == null) return 0;
+        return enemySO.GetExpReward(EnemyLevel);
+    }
+
+    /// <summary>Hệ số tốc độ đánh của Player (1 = bình thường). Entity khác trả về 1.</summary>
+    public float GetAttackSpeed()
+    {
+        if (kind != EntityKind.Player || playerCharacter == null || playerSO == null) return 1f;
+        return playerCharacter.playerStatsRuntime.GetAttackSpeed(playerSO);
     }
     private void LogPlayerStats()
     {
@@ -61,10 +109,11 @@ public class CombatEntity : MonoBehaviour
             ? LevelSessionManager.Instance.currentDifficulty
             : Difficulty.Easy;
 
-        Debug.Log($"[Enemy Spawn] {name.Replace("(Clone)", "")} | Độ khó={difficulty} | " +
+        Debug.Log($"[Enemy Spawn] {name.Replace("(Clone)", "")} LV={EnemyLevel} | Độ khó={difficulty} | " +
                   $"HP={GetMaxHealth()} (gốc {enemySO.maxHealth}) | " +
                   $"ATK={s.Attack} (gốc {enemySO.attack}) | " +
                   $"DEF={s.Defense} (gốc {enemySO.defense}) | " +
+                  $"EXP={GetExpReward()} | " +
                   $"Crit={s.CritChance:P0} x{s.CritMultiplier}");
     }
 
@@ -102,7 +151,7 @@ public class CombatEntity : MonoBehaviour
         if (kind == EntityKind.Player)
             return new PlayerCombatStatsAdapter(playerSO, playerCharacter.playerStatsRuntime);
         var m = DifficultyScaling.Current();
-        return new EnemyCombatStatsAdapter(enemySO, m.attack, m.defense);
+        return new EnemyCombatStatsAdapter(enemySO, EnemyLevel, m.attack, m.defense);
     }
 
     public DamageResult DealDamageTo(CombatEntity target)
@@ -127,7 +176,7 @@ public class CombatEntity : MonoBehaviour
             return playerCharacter.playerStatsRuntime.GetMaxHealth(playerSO);
         }
         if (enemySO == null) return 0;
-        return Mathf.RoundToInt(enemySO.maxHealth * DifficultyScaling.Current().health);
+        return Mathf.RoundToInt(enemySO.GetMaxHealth(EnemyLevel) * DifficultyScaling.Current().health);
     }
 
     private readonly struct PlayerCombatStatsAdapter : ICombatStats
@@ -151,11 +200,13 @@ public class CombatEntity : MonoBehaviour
     private readonly struct EnemyCombatStatsAdapter : ICombatStats
     {
         private readonly EnemyStatsSO so;
+        private readonly int level;
         private readonly float attMul;
         private readonly float defMul;
-        public EnemyCombatStatsAdapter(EnemyStatsSO so, float attMul, float defMul)
+        public EnemyCombatStatsAdapter(EnemyStatsSO so,int level, float attMul, float defMul)
         {
             this.so = so;
+            this.level = level;
             this.attMul = attMul;
             this.defMul = defMul;
         }
