@@ -21,6 +21,7 @@ TagManager:
   - BoD
   - ToD
   - FlyingEnemy
+  - Arrow
   layers:
   - Default
   - TransparentFX
