@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerMovement))]
@@ -13,11 +12,22 @@ public class PlayerRangeAttack : MonoBehaviour
     [SerializeField] private LayerMask enemyLayer;
     [SerializeField] private float targetRange = 10f;
 
+    [Header("Projectile Damage")]
+    [Tooltip("Layer chặn mũi tên (Ground...). Để trống sẽ tự dùng layer 'Ground' nếu project có.")]
+    [SerializeField] private LayerMask obstacleLayer;
+    [Tooltip("Mũi tên tự huỷ sau số giây này nếu không trúng gì.")]
+    [SerializeField] private float projectileLifetime = 3f;
+
     private PlayerMovement movement;
+    private CombatEntity combatEntity;
 
     private void Awake()
     {
         movement = GetComponent<PlayerMovement>();
+        combatEntity = GetComponent<CombatEntity>();
+
+        if (obstacleLayer.value == 0)
+            obstacleLayer = LayerMask.GetMask("Ground");
     }
 
     // Tìm Enemy gần nhất ở phía trước
@@ -114,6 +124,13 @@ public class PlayerRangeAttack : MonoBehaviour
 
         spear.transform.rotation =
             Quaternion.Euler(0f, 0f, angle);
+
+        // Gắn sát thương cho mũi tên / giáo (prefab không cần có sẵn script)
+        ArrowManager projectile = spear.GetComponent<ArrowManager>();
+        if (projectile == null) projectile = spear.AddComponent<ArrowManager>();
+
+        ICombatStats attackerStats = combatEntity != null ? combatEntity.GetStats() : null;
+        projectile.Init(attackerStats, enemyLayer, obstacleLayer, projectileLifetime);
     }
 
     private void OnDrawGizmosSelected()

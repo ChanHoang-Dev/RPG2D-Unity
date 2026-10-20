@@ -20,9 +20,9 @@ GameObject:
   - component: {fileID: 6424491735940220808}
   - component: {fileID: 7569362563263889442}
   - component: {fileID: 4415713526357216809}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Archer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -316,6 +316,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 134213888
   targetRange: 10
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  projectileLifetime: 3
 --- !u!1 &8650904550717680635
 GameObject:
   m_ObjectHideFlags: 0
