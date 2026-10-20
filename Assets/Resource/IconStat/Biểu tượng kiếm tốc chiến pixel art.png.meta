@@ -1,0 +1,226 @@
+fileFormatVersion: 2
+guid: d270d33c13f4195429703c7e4edd7065
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8769396864960470508
+    second: "Bi\u1EC3u t\u01B0\u1EE3ng ki\u1EBFm t\u1ED1c chi\u1EBFn pixel art_0"
+  - first:
+      213: 7181803199817708779
+    second: "Bi\u1EC3u t\u01B0\u1EE3ng ki\u1EBFm t\u1ED1c chi\u1EBFn pixel art_1"
+  - first:
+      213: 5620784861158970994
+    second: "Bi\u1EC3u t\u01B0\u1EE3ng ki\u1EBFm t\u1ED1c chi\u1EBFn pixel art_2"
+  - first:
+      213: 8439505468832227755
+    second: "Bi\u1EC3u t\u01B0\u1EE3ng ki\u1EBFm t\u1ED1c chi\u1EBFn pixel art_3"
+  - first:
+      213: -6626084672778711477
+    second: "Bi\u1EC3u t\u01B0\u1EE3ng ki\u1EBFm t\u1ED1c chi\u1EBFn pixel art_4"
+  - first:
+      213: -6355118999049025021
+    second: "Bi\u1EC3u t\u01B0\u1EE3ng ki\u1EBFm t\u1ED1c chi\u1EBFn pixel art_5"
+  - first:
+      213: -4297562184076893552
+    second: "Bi\u1EC3u t\u01B0\u1EE3ng ki\u1EBFm t\u1ED1c chi\u1EBFn pixel art_6"
+  - first:
+      213: -4749937843784607616
+    second: "Bi\u1EC3u t\u01B0\u1EE3ng ki\u1EBFm t\u1ED1c chi\u1EBFn pixel art_7"
+  - first:
+      213: -6163557912141464231
+    second: "Bi\u1EC3u t\u01B0\u1EE3ng ki\u1EBFm t\u1ED1c chi\u1EBFn pixel art_8"
+  - first:
+      213: 6964744718709611778
+    second: "Bi\u1EC3u t\u01B0\u1EE3ng ki\u1EBFm t\u1ED1c chi\u1EBFn pixel art_9"
+  - first:
+      213: -4633449982019834546
+    second: "Bi\u1EC3u t\u01B0\u1EE3ng ki\u1EBFm t\u1ED1c chi\u1EBFn pixel art_10"
+  - first:
+      213: 2335734665650644168
+    second: "Bi\u1EC3u t\u01B0\u1EE3ng ki\u1EBFm t\u1ED1c chi\u1EBFn pixel art_11"
+  - first:
+      213: -7767425739734496325
+    second: "Bi\u1EC3u t\u01B0\u1EE3ng ki\u1EBFm t\u1ED1c chi\u1EBFn pixel art_12"
+  - first:
+      213: -365382579883504718
+    second: "Bi\u1EC3u t\u01B0\u1EE3ng ki\u1EBFm t\u1ED1c chi\u1EBFn pixel art_13"
+  - first:
+      213: 3594906815785344386
+    second: "Bi\u1EC3u t\u01B0\u1EE3ng ki\u1EBFm t\u1ED1c chi\u1EBFn pixel art_14"
+  - first:
+      213: -4960883004076359750
+    second: "Bi\u1EC3u t\u01B0\u1EE3ng ki\u1EBFm t\u1ED1c chi\u1EBFn pixel art_15"
+  - first:
+      213: 5860462346074272924
+    second: "Bi\u1EC3u t\u01B0\u1EE3ng ki\u1EBFm t\u1ED1c chi\u1EBFn pixel art_16"
+  - first:
+      213: -1602470278848112328
+    second: "Bi\u1EC3u t\u01B0\u1EE3ng ki\u1EBFm t\u1ED1c chi\u1EBFn pixel art_17"
+  - first:
+      213: -1120240097506155239
+    second: "Bi\u1EC3u t\u01B0\u1EE3ng ki\u1EBFm t\u1ED1c chi\u1EBFn pixel art_18"
+  - first:
+      213: 4829836700353792156
+    second: "Bi\u1EC3u t\u01B0\u1EE3ng ki\u1EBFm t\u1ED1c chi\u1EBFn pixel art_19"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Bi\u1EC3u t\u01B0\u1EE3ng ki\u1EBFm t\u1ED1c chi\u1EBFn pixel art_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1254
+        height: 1254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced94668cf723b970800000000000000
+      internalID: 8769396864960470508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3c4c74da5f68ab14e8f2b898146cac4b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Bi\u1EC3u t\u01B0\u1EE3ng ki\u1EBFm t\u1ED1c chi\u1EBFn pixel art_0": 8769396864960470508
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

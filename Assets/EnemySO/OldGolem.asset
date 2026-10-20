@@ -17,5 +17,10 @@ MonoBehaviour:
   defense: 100
   critChance: 0.1
   critMultiplier: 1.5
+  hpGrowthPerLevel: 0.12
+  atkGrowthPerLevel: 0.15
+  defGrowthPerLevel: 0.08
+  baseExp: 1000
+  expGrowthPerLevel: 0.1
   damageRollPercentMin: 0.1
   damageRollPercentMax: 0.2

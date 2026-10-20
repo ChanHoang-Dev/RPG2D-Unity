@@ -3,18 +3,23 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /// <summary>
-/// Gom EXP của MỘT màn chơi: mỗi quái chết cộng EXP (theo loại quái + level quái).
-/// Khi màn chơi kết thúc, Commit() nhân tổng với hệ số độ khó (Easy x1, Medium x1.5, Hard x2)
-/// rồi chia cho các nhân vật qua GameSessionManager.AwardStageExperience (100% nhân vật đang chọn, 40% còn lại).
+/// Gom EXP của MỘT màn chơi: mỗi quái chết cộng EXP (theo loại quái + level quái)
+/// và NHÂN NGAY hệ số độ khó (Easy x1, Medium x1.5, Hard x2) tại thời điểm tiêu diệt.
+/// Khi màn chơi kết thúc, Commit() chia tổng cho các nhân vật qua GameSessionManager.AwardStageExperience
+/// (100% nhân vật đang chọn, 40% còn lại).
 /// </summary>
 public static class StageExpTracker
 {
-    public static int BaseExp { get; private set; }
+    /// <summary>Tổng EXP của màn, ĐÃ nhân hệ số độ khó của từng lần tiêu diệt.</summary>
+    public static int TotalExp { get; private set; }
     public static int KillCount { get; private set; }
 
     private static bool committed;
 
-    /// <summary>(baseExp, killCount) - dùng cho HUD nếu muốn hiện EXP trong lúc chơi.</summary>
+    /// <summary>true sau khi Commit() đã chạy: EXP của màn đã được cộng vào nhân vật (HUD không cộng thêm nữa).</summary>
+    public static bool IsCommitted => committed;
+
+    /// <summary>(totalExp, killCount) - dùng cho HUD nếu muốn hiện EXP trong lúc chơi.</summary>
     public static event Action<int, int> OnExpChanged;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
@@ -27,27 +32,38 @@ public static class StageExpTracker
 
     public static void Reset()
     {
-        BaseExp = 0;
+        TotalExp = 0;
         KillCount = 0;
         committed = false;
     }
 
-    public static bool RegisterKill(int exp)
+    /// <summary>
+    /// Ghi nhận một lần tiêu diệt. baseExp là EXP gốc của quái; gainedExp trả về EXP thực nhận
+    /// sau khi nhân hệ số độ khó (ví dụ Medium: 20 -> 30). Trả về false nếu màn đã kết thúc.
+    /// </summary>
+    public static bool RegisterKill(int baseExp, out int gainedExp)
     {
+        gainedExp = 0;
         if (committed) return false; // người chơi đã thua / màn đã kết thúc -> không tính nữa
+
+        gainedExp = ApplyDifficulty(baseExp);
         KillCount++;
-        BaseExp += Mathf.Max(0, exp);
-        OnExpChanged?.Invoke(BaseExp, KillCount);
+        TotalExp += gainedExp;
+        OnExpChanged?.Invoke(TotalExp, KillCount);
         return true;
     }
-    public static int GetDisplayExp(int baseExp)
+
+    /// <summary>EXP gốc -> EXP sau hệ số độ khó hiện tại (làm tròn nửa lên, nên 3 x1.5 = 5).</summary>
+    public static int ApplyDifficulty(int baseExp)
     {
-        return Mathf.RoundToInt(baseExp * DifficultyScaling.Current().exp);
+        float scaled = Mathf.Max(0, baseExp) * DifficultyScaling.Current().exp;
+        return Mathf.FloorToInt(scaled + 0.5f);
     }
-    /// <summary>Tổng EXP sau khi nhân hệ số độ khó.</summary>
+
+    /// <summary>Tổng EXP của màn (đã nhân hệ số độ khó từng lần giết).</summary>
     public static int GetFinalExp()
     {
-        return Mathf.RoundToInt(BaseExp * DifficultyScaling.Current().exp);
+        return TotalExp;
     }
 
     /// <summary>Chốt EXP, chỉ chạy 1 lần mỗi màn. Trả về số EXP của nhân vật đang chọn.</summary>
@@ -57,7 +73,7 @@ public static class StageExpTracker
         committed = true;
 
         int finalExp = GetFinalExp();
-        Debug.Log($"[StageExp] Kết thúc màn: {KillCount} quái, EXP gốc={BaseExp}, hệ số độ khó=x{DifficultyScaling.Current().exp} -> nhận {finalExp} EXP.");
+        Debug.Log($"[StageExp] Kết thúc màn: {KillCount} quái, độ khó x{DifficultyScaling.Current().exp} -> nhận {finalExp} EXP.");
 
         if (finalExp > 0 && GameSessionManager.Instance != null)
             GameSessionManager.Instance.AwardStageExperience(finalExp);

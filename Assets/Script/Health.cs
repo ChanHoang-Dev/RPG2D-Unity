@@ -120,9 +120,10 @@ public class Health : MonoBehaviour
         if (combatEntity != null)
         {
             int reward = combatEntity.GetExpReward();
-            bool counted = StageExpTracker.RegisterKill(reward);
-            if (counted && reward > 0)
-                OnKilled?.Invoke(StageExpTracker.GetDisplayExp(reward));
+            // gainedExp đã nhân hệ số độ khó (Medium: 20 -> 30), popup hiện đúng số này
+            bool counted = StageExpTracker.RegisterKill(reward, out int gainedExp);
+            if (counted && gainedExp > 0)
+                OnKilled?.Invoke(gainedExp);
         }
 
         if (animator != null)
