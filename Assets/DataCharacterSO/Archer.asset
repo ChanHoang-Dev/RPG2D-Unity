@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterId: 11
   characterName: Archer
-  level: 1
+  level: 6
   isUnlocked: 1
   animatorController: {fileID: 22100000, guid: bc0c66467bbd8694cae69413add62999, type: 2}
   thumbnail: {fileID: -4454390676710434392, guid: 0cff5e31948149346891e7aa8bcc0261, type: 3}
@@ -22,5 +22,5 @@ MonoBehaviour:
   attackCount: 1
   powerRating: 3
   playerStatsRuntime:
-    totalExp: 0
+    totalExp: 2000
   statsSO: {fileID: 11400000, guid: 8689a09eb33351443b06f7734faa8566, type: 2}

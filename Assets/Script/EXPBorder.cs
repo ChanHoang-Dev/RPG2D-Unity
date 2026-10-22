@@ -6,8 +6,7 @@ using UnityEngine.UI;
 /// <summary>
 /// Viền EXP chạy quanh khung chữ nhật + hiển thị Level của nhân vật đang chọn.
 /// Dữ liệu lấy tự động từ GameSessionManager.SelectedCharacter:
-///   - EXP đã lưu của nhân vật (PlayerStatsRuntime.TotalExp)
-///   - cộng thêm EXP đang chờ chốt trong màn (StageExpTracker.GetFinalExp), nên đánh quái là viền chạy ngay.
+///   - EXP của nhân vật (PlayerStatsRuntime), được cộng ngay mỗi lần giết quái nên viền chạy ngay.
 /// Khi EXP vượt ngưỡng: viền chạy đầy -> Level tăng, hiệu ứng nảy -> viền reset về 0 rồi chạy tiếp.
 ///
 /// Inspector: expBorderImage = Image (Type: Filled, Radial 360, Origin: Top, Clockwise bật).
@@ -88,28 +87,13 @@ public class EXPBorder : MonoBehaviour
     }
 
     // ------------------------------------------------------------------
-    // Lấy level + tiến độ THẬT (đã gồm EXP đang chờ chốt của màn hiện tại)
+    // Lấy level + tiến độ THẬT của nhân vật (EXP được cộng ngay mỗi lần giết quái)
     // ------------------------------------------------------------------
     private static void ReadTarget(CharacterData character, out int level, out float progress)
     {
-        long total = character.playerStatsRuntime.TotalExp;
-
-        // Sau Commit(), EXP đã nằm trong TotalExp rồi -> không cộng thêm nữa (tránh tính 2 lần)
-        if (!StageExpTracker.IsCommitted)
-            total += StageExpTracker.GetFinalExp();
-
-        total = System.Math.Min(total, CharacterProgression.MaxTotalExp);
-
-        level = CharacterProgression.LevelFromTotalExp((int)total);
-        if (level >= CharacterProgression.MaxLevel)
-        {
-            progress = 1f;
-            return;
-        }
-
-        int into = (int)total - CharacterProgression.TotalExpForLevel(level);
-        int need = Mathf.Max(1, CharacterProgression.ExpToNextLevel(level));
-        progress = Mathf.Clamp01((float)into / need);
+        PlayerStatsRuntime rt = character.playerStatsRuntime;
+        level = rt.Level;
+        progress = rt.LevelProgress01; // level tối đa -> 1
     }
 
     // ------------------------------------------------------------------

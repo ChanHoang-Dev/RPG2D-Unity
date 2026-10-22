@@ -18,6 +18,24 @@ public class GameSessionManager : MonoBehaviour
     public static event Action<CharacterData> OnCharacterChanged;
     public static event Action<CharacterData> OnCharacterUnlocked;
 
+    // Có nhân vật nào lên level trong lần cộng EXP vừa rồi không -> lên level thì lưu luôn
+    private bool levelChangedFlag;
+
+    private void OnEnable()
+    {
+        CharacterProgression.OnCharacterLevelChanged += MarkLevelChanged;
+    }
+
+    private void OnDisable()
+    {
+        CharacterProgression.OnCharacterLevelChanged -= MarkLevelChanged;
+    }
+
+    private void MarkLevelChanged(CharacterData data, int oldLevel, int newLevel)
+    {
+        levelChangedFlag = true;
+    }
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -38,9 +56,17 @@ public class GameSessionManager : MonoBehaviour
 
     private void RestoreSelectionFromSave()
     {
-        string lastSelectedCharacterId = CharacterSaveManager.HasSaveFile()
-                        ? CharacterSaveManager.Load(allCharacters)
-                        : null;
+        string lastSelectedCharacterId = null;
+        if (CharacterSaveManager.HasSaveFile())
+        {
+            lastSelectedCharacterId = CharacterSaveManager.Load(allCharacters);
+        }
+        else
+        {
+            // Không có file save = chơi mới. CharacterData là ScriptableObject nên trong Editor nó GIỮ LẠI EXP
+            // của lần Play trước (không tự về 0) -> phải reset tay, nếu không xóa file save vẫn còn level cũ.
+            ResetAllProgress();
+        }
         CharacterData target = null;
         if (!string.IsNullOrEmpty(lastSelectedCharacterId))
         {
@@ -61,6 +87,18 @@ public class GameSessionManager : MonoBehaviour
         }
         SelectedCharacter = target;
     }
+    /// <summary>Đưa EXP / level của mọi nhân vật về 0 (level 1).</summary>
+    private void ResetAllProgress()
+    {
+        foreach (CharacterData c in allCharacters)
+        {
+            if (c == null || c.playerStatsRuntime == null) continue;
+            c.playerStatsRuntime.ResetProgress();
+            c.RefreshLevelCache();
+        }
+        Debug.Log("[GameSession] Không có file save -> reset EXP của mọi nhân vật về level 1.");
+    }
+
     public void RegisterCharacterList(Transform characterListContent)
     {
         registeredCharacterListContent = characterListContent;
@@ -121,11 +159,13 @@ public class GameSessionManager : MonoBehaviour
             slot.RefreshState(IsSelected);
         }
     }
-    // Ghi nhận kinh nghiệm sau mỗi stage
+    // Cộng EXP ngay mỗi lần giết quái. Không ghi file mỗi lần giết: chỉ lưu khi có người lên level,
+    // phần EXP lẻ còn lại được lưu lúc Player chết / thoát game (OnApplicationQuit).
     public void AwardStageExperience(int expEarned)
     {
+        levelChangedFlag = false;
         CharacterProgression.DistributeStageExperience(allCharacters, SelectedCharacter, expEarned);
-        SaveGame();
+        if (levelChangedFlag) SaveGame();
     }
     public CharacterData GetCharacterByName(string name)
     {

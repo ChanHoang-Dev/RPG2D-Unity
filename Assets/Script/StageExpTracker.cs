@@ -3,10 +3,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /// <summary>
-/// Gom EXP của MỘT màn chơi: mỗi quái chết cộng EXP (theo loại quái + level quái)
-/// và NHÂN NGAY hệ số độ khó (Easy x1, Medium x1.5, Hard x2) tại thời điểm tiêu diệt.
-/// Khi màn chơi kết thúc, Commit() chia tổng cho các nhân vật qua GameSessionManager.AwardStageExperience
-/// (100% nhân vật đang chọn, 40% còn lại).
+/// EXP của MỘT màn chơi: mỗi quái chết nhân NGAY hệ số độ khó (Easy x1, Medium x1.5, Hard x2)
+/// rồi cộng LUÔN vào nhân vật qua GameSessionManager.AwardStageExperience
+/// (100% nhân vật đang chọn, 40% còn lại) -> lên level là chỉ số tăng ngay trong màn.
+/// Commit() chỉ còn khoá màn (không tính EXP nữa) và lưu file.
 /// </summary>
 public static class StageExpTracker
 {
@@ -49,6 +49,11 @@ public static class StageExpTracker
         gainedExp = ApplyDifficulty(baseExp);
         KillCount++;
         TotalExp += gainedExp;
+
+        // Cộng EXP vào nhân vật NGAY (lên level -> chỉ số tăng luôn trong màn)
+        if (gainedExp > 0 && GameSessionManager.Instance != null)
+            GameSessionManager.Instance.AwardStageExperience(gainedExp);
+
         OnExpChanged?.Invoke(TotalExp, KillCount);
         return true;
     }
@@ -66,17 +71,20 @@ public static class StageExpTracker
         return TotalExp;
     }
 
-    /// <summary>Chốt EXP, chỉ chạy 1 lần mỗi màn. Trả về số EXP của nhân vật đang chọn.</summary>
+    /// <summary>
+    /// Kết thúc màn, chỉ chạy 1 lần: khoá không tính EXP nữa và lưu file
+    /// (EXP đã được cộng vào nhân vật từng lần giết rồi). Trả về tổng EXP kiếm được trong màn.
+    /// </summary>
     public static int Commit()
     {
         if (committed) return 0;
         committed = true;
 
         int finalExp = GetFinalExp();
-        Debug.Log($"[StageExp] Kết thúc màn: {KillCount} quái, độ khó x{DifficultyScaling.Current().exp} -> nhận {finalExp} EXP.");
+        Debug.Log($"[StageExp] Kết thúc màn: {KillCount} quái, độ khó x{DifficultyScaling.Current().exp} -> kiếm được {finalExp} EXP.");
 
-        if (finalExp > 0 && GameSessionManager.Instance != null)
-            GameSessionManager.Instance.AwardStageExperience(finalExp);
+        if (GameSessionManager.Instance != null)
+            GameSessionManager.Instance.SaveGame();
 
         return finalExp;
     }

@@ -45,6 +45,37 @@ public class PlayerHealth : MonoBehaviour
             combatEntity = GetComponent<CombatEntity>();
 
     }
+    void OnEnable()
+    {
+        CharacterProgression.OnCharacterLevelChanged += HandleLevelChanged;
+    }
+
+    void OnDisable()
+    {
+        CharacterProgression.OnCharacterLevelChanged -= HandleLevelChanged;
+    }
+
+    /// <summary>
+    /// Nhân vật đang chơi lên level giữa màn: cập nhật máu tối đa ngay.
+    /// Phần máu tối đa tăng thêm được cộng luôn vào máu hiện tại (không hồi đầy).
+    /// </summary>
+    private void HandleLevelChanged(CharacterData data, int oldLevel, int newLevel)
+    {
+        if (isDead || combatEntity == null) return;
+
+        GameSessionManager gsm = GameSessionManager.Instance;
+        if (gsm == null || data != gsm.SelectedCharacter) return; // nhân vật khác (nhận 40% EXP) lên level thì bỏ qua
+
+        int newMax = combatEntity.GetMaxHealth();
+        if (newMax <= 0 || newMax == maxHealth) return;
+
+        int bonus = Mathf.Max(0, newMax - maxHealth);
+        maxHealth = newMax;
+        currentHealth = Mathf.Clamp(currentHealth + bonus, 1, maxHealth);
+
+        OnHealthChanged?.Invoke(currentHealth, maxHealth);
+    }
+
 #if UNITY_EDITOR
     private void OnValidate()
     {

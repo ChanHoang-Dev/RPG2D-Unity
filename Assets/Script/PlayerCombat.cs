@@ -67,6 +67,24 @@ public class PlayerCombat : MonoBehaviour
         if (combatEntity == null) combatEntity = GetComponent<CombatEntity>();
     }
 
+    void OnEnable()
+    {
+        CharacterProgression.OnCharacterLevelChanged += HandleLevelChanged;
+    }
+
+    void OnDisable()
+    {
+        CharacterProgression.OnCharacterLevelChanged -= HandleLevelChanged;
+    }
+
+    // Lên level giữa màn -> tốc độ đánh mới áp dụng từ đòn kế tiếp
+    private void HandleLevelChanged(CharacterData data, int oldLevel, int newLevel)
+    {
+        GameSessionManager gsm = GameSessionManager.Instance;
+        if (gsm != null && data == gsm.SelectedCharacter)
+            RefreshAttackSpeed();
+    }
+
     void Start()
     {
         animator = controller.Animator;
