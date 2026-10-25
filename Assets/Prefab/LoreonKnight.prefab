@@ -36,7 +36,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 17.74, y: 2.3, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7317152814879764238}
@@ -184,7 +184,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 1.9375}
+    oldSize: {x: 2, y: 3.1}
     newSize: {x: 1.25, y: 1.9375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -231,6 +231,9 @@ MonoBehaviour:
   comboBufferOpenAt: 0.8
   comboBufferCloseAt: 0.95
   loopComboAtEnd: 0
+  combatEntity: {fileID: 0}
+  minAttackSpeed: 0.5
+  maxAttackSpeed: 3
 --- !u!114 &4704223966667045808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,6 +281,7 @@ MonoBehaviour:
   kind: 0
   fallbackPlayerSO: {fileID: 11400000, guid: f9ec6676419f14e4d8c6a63d56206f99, type: 2}
   enemySO: {fileID: 0}
+  testEnemyLevel: 1
 --- !u!114 &6495299608126678453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,6 +297,7 @@ MonoBehaviour:
   popupPrefab: {fileID: 997000382645009308, guid: e5684ff58751da545ba2548b3e7f6fab, type: 3}
   spawnOffset: {x: 0, y: 1.2, z: 0}
   randomOffsetRange: 0.3
+  expSpawnOffset: {x: 0, y: 1.9, z: 0}
 --- !u!1001 &4381361431282232745
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -7272,6 +7272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allCharacters:
   - {fileID: 11400000, guid: 1c97552bf31dd4b48b439af3e6d83a22, type: 2}
+  - {fileID: 11400000, guid: 22510e41a14dc974c89d04646280003f, type: 2}
   - {fileID: 11400000, guid: 0c1e44cd670e28244bd36c374cd67bb4, type: 2}
   - {fileID: 11400000, guid: 87f40b5a9481f86429e4c32b25cf1c9b, type: 2}
   - {fileID: 11400000, guid: 01aba77e7f8bc4f43b079ff17d68abb7, type: 2}

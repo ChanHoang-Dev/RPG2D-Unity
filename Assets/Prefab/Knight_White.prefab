@@ -36,7 +36,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.99, y: 1.2, z: 0}
-  m_LocalScale: {x: 1.1, y: 1.1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2428492304332150330}
@@ -249,6 +249,9 @@ MonoBehaviour:
   comboBufferOpenAt: 0.8
   comboBufferCloseAt: 0.95
   loopComboAtEnd: 0
+  combatEntity: {fileID: 0}
+  minAttackSpeed: 0.5
+  maxAttackSpeed: 3
 --- !u!114 &5952146664910794149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,6 +284,7 @@ MonoBehaviour:
   kind: 0
   fallbackPlayerSO: {fileID: 11400000, guid: ddad5ff1c6bb5094ea4e773d1c16d0ce, type: 2}
   enemySO: {fileID: 0}
+  testEnemyLevel: 1
 --- !u!114 &4915341849357140474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,6 +300,7 @@ MonoBehaviour:
   popupPrefab: {fileID: 997000382645009308, guid: e5684ff58751da545ba2548b3e7f6fab, type: 3}
   spawnOffset: {x: 0, y: 2.5, z: 0}
   randomOffsetRange: 0.3
+  expSpawnOffset: {x: 0, y: 1.9, z: 0}
 --- !u!1001 &8716077540587345053
 PrefabInstance:
   m_ObjectHideFlags: 0

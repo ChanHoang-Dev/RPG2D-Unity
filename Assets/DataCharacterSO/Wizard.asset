@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4adebfe3722e1d46bf936cf0846cd06, type: 3}
+  m_Name: Wizard
+  m_EditorClassIdentifier: 
+  characterId: 12
+  characterName: Wizard
+  level: 1
+  isUnlocked: 0
+  animatorController: {fileID: 22100000, guid: 240298e675ec8444b8c19503ba5b5035, type: 2}
+  thumbnail: {fileID: 1113103596579290975, guid: 1ca540fabbc2c754da2cd3b6ea22389f, type: 3}
+  characterPrefab: {fileID: 488080195339765258, guid: d48aa753e0519374bb185cfcf2beff1b, type: 3}
+  attackCount: 1
+  powerRating: 0
+  playerStatsRuntime:
+    totalExp: 0
+  statsSO: {fileID: 11400000, guid: 54a88013ea656a240841789278002efd, type: 2}
