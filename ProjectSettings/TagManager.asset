@@ -62,6 +62,9 @@ TagManager:
   - name: BackGround
     uniqueID: 3649567307
     locked: 0
+  - name: ForeGround
+    uniqueID: 2072246533
+    locked: 0
   - name: Ground
     uniqueID: 1832693521
     locked: 0
@@ -76,6 +79,12 @@ TagManager:
     locked: 0
   - name: Button3star
     uniqueID: 3602871887
+    locked: 0
+  - name: CharacterAndEnemy
+    uniqueID: 2151198589
+    locked: 0
+  - name: Water
+    uniqueID: 1304015863
     locked: 0
   m_RenderingLayers:
   - Default

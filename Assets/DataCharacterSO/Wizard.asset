@@ -20,7 +20,7 @@ MonoBehaviour:
   thumbnail: {fileID: 1113103596579290975, guid: 1ca540fabbc2c754da2cd3b6ea22389f, type: 3}
   characterPrefab: {fileID: 488080195339765258, guid: d48aa753e0519374bb185cfcf2beff1b, type: 3}
   attackCount: 1
-  powerRating: 0
+  powerRating: 3.5
   playerStatsRuntime:
     totalExp: 0
   statsSO: {fileID: 11400000, guid: 54a88013ea656a240841789278002efd, type: 2}

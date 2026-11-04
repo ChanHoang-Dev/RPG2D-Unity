@@ -20,7 +20,7 @@ MonoBehaviour:
   hpGrowthPerLevel: 0.12
   atkGrowthPerLevel: 0.15
   defGrowthPerLevel: 0.08
-  baseExp: 1000
+  baseExp: 100
   expGrowthPerLevel: 0.1
   damageRollPercentMin: 0.1
   damageRollPercentMax: 0.2

@@ -14,13 +14,17 @@ public class ChargePrefabs : MonoBehaviour
     [SerializeField] private string flyState = "Charge_Fly";
     [SerializeField] private string collisionState = "Charge_Collision";
 
+    [Header("Fallback")]
+    [Tooltip("Chỉ dùng khi không tính được từ stat (không có stat người bắn hoặc quái không có CombatEntity).")]
+    [SerializeField] private int fallbackDamage = 1;
+
     private Rigidbody2D rb;
     private Collider2D col;
     private Animator animator;
 
     private Vector2 direction;
     private float speed;
-    private int damage;
+    private ICombatStats attackerStats; // stat của Wizard, chụp lúc bắn
     private LayerMask enemyLayer;
     private bool hasHit;
 
@@ -34,11 +38,12 @@ public class ChargePrefabs : MonoBehaviour
         col.isTrigger = true;
     }
 
-    public void Init(Vector2 dir, float moveSpeed, int dmg, float lifeTime, LayerMask targetLayer)
+    /// <param name="attacker">Stat của Wizard (chụp lúc bắn, nên vẫn đúng nếu Wizard chết khi chiêu còn đang bay).</param>
+    public void Init(ICombatStats attacker, Vector2 dir, float moveSpeed, float lifeTime, LayerMask targetLayer)
     {
         direction = dir.normalized;
         speed = moveSpeed;
-        damage = dmg;
+        attackerStats = attacker;
         enemyLayer = targetLayer;
 
         // Lật sprite theo hướng bay
@@ -64,15 +69,29 @@ public class ChargePrefabs : MonoBehaviour
         // Chỉ va chạm với layer của quái
         if ((enemyLayer.value & (1 << other.gameObject.layer)) == 0) return;
 
+        Health targetHealth = other.GetComponentInParent<Health>();
+        if (targetHealth == null) return;
+
+        // Xác quái chưa kịp biến mất: cho chiêu bay xuyên qua
+        if (targetHealth.IsDead()) return;
+
         hasHit = true;
 
         // Dừng chiêu và tắt collider để không gây damage 2 lần
         rb.linearVelocity = Vector2.zero; // Unity 2022 trở xuống: rb.velocity
         col.enabled = false;
 
-        // TODO: thay bằng đúng cách Arrow của Archer gây damage trong project của bạn
-        // Ví dụ: other.GetComponent<EnemyHealth>()?.TakeDamage(damage);
-        other.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
+        // Damage tính từ chỉ số của Wizard (giống ArrowManager của Archer)
+        CombatEntity targetCombat = other.GetComponentInParent<CombatEntity>();
+        if (attackerStats != null && targetCombat != null)
+        {
+            DamageResult result = CombatCalculator.CalculateDamage(attackerStats, targetCombat.GetStats());
+            targetHealth.TakeDamage(result);
+        }
+        else
+        {
+            targetHealth.TakeDamage(fallbackDamage);
+        }
 
         StartCoroutine(PlayCollisionAndDestroy());
     }

@@ -37,7 +37,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -18.95, y: -5.01, z: 0}
-  m_LocalScale: {x: 1.3, y: 1.3, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7667469371679914746}
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1832693521
-  m_SortingLayer: 2
+  m_SortingLayerID: -2143768707
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 2094173765588758402, guid: 77fdbc5b58735d64b92f3a7c350b40ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -155,7 +155,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.10491276, y: -0.031613827}
+  m_Offset: {x: -0.010482669, y: -0.37780106}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -165,7 +165,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.5573635, y: 2.4315195}
+  m_Size: {x: 2.095877, y: 3.3290417}
   m_EdgeRadius: 0
 --- !u!50 &84707447176428984
 Rigidbody2D:
@@ -210,6 +210,10 @@ MonoBehaviour:
   airControlMultiplier: 0.8
   jumpForce: 8
   IsBandit: 0
+  IsArcher: 1
+  archerJumpStateName: Knight_White-Jump
+  archerApexNormalizedTime: 0.48
+  archerApexVelocityThreshold: 0.5
 --- !u!114 &8266548374151341088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,6 +374,22 @@ PrefabInstance:
     - target: {fileID: 5381438949650322827, guid: 7cb0fda645e46e64180d435ebc0715a5, type: 3}
       propertyPath: targetLayer.m_Bits
       value: 134213888
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804929021347885412, guid: 7cb0fda645e46e64180d435ebc0715a5, type: 3}
+      propertyPath: m_Size.x
+      value: 1.0371134
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804929021347885412, guid: 7cb0fda645e46e64180d435ebc0715a5, type: 3}
+      propertyPath: m_Size.y
+      value: 2.4393501
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804929021347885412, guid: 7cb0fda645e46e64180d435ebc0715a5, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.11102639
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804929021347885412, guid: 7cb0fda645e46e64180d435ebc0715a5, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.13583589
       objectReference: {fileID: 0}
     - target: {fileID: 6432836495325053607, guid: 7cb0fda645e46e64180d435ebc0715a5, type: 3}
       propertyPath: m_LocalPosition.x

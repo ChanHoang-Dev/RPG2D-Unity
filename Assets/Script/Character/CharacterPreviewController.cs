@@ -212,6 +212,10 @@ public class CharacterPreviewController : MonoBehaviour
             else
                 Debug.LogWarning($"[CharacterPreview] Nhân vật '{currentCharacterData.characterName}' chưa mở khóa và không đủ điều kiện mở khóa.");
         }
+        if(GameSessionManager.Instance != null )
+        {
+            GameSessionManager.Instance.SelectCharacter(currentCharacterData);
+        }
     }
     private void OnConfirmUnlockClicked()
     {

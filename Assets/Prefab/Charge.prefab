@@ -79,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1832693521
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 778240012933890447, guid: e706d77af8a70e3439708cbe2a003b00, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -174,7 +174,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.27890015, y: -0.2270118}
+  m_Offset: {x: 0.09935784, y: -0.15751153}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -184,7 +184,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.3100963, y: 1.0388732}
+  m_Size: {x: 2.8081818, y: 1.2937075}
   m_EdgeRadius: 0
 --- !u!114 &7191464877591464996
 MonoBehaviour:
@@ -200,3 +200,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flyState: Charge_Fly
   collisionState: Charge_Collision
+  fallbackDamage: 1

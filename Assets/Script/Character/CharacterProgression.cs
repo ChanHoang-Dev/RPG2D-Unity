@@ -49,7 +49,7 @@ public static class CharacterProgression
 
     // ---- EXP curve (placeholder values, tune freely) ----
     // EXP needed to go from level L to L+1 = BaseExp * L ^ ExpExponent
-    private const float BaseExp = 100f;
+    private const float BaseExp = 1000f;
     private const float ExpExponent = 1.2f;
 
     /// <summary>Levels at which a buff is granted: 5, 10, 15 ... 50.</summary>

@@ -4,6 +4,9 @@ public class PlayerSpawn : MonoBehaviour
 {
     [Header("Spawn Point")]
     [SerializeField] private Transform spawnPoint;
+    [Header("Camera")]
+    [Tooltip("Để trống sẽ tự tìm CameraController trong scene.")]
+    [SerializeField] private CameraController cameraController;
 
     private void Start()
     {
@@ -40,7 +43,21 @@ public class PlayerSpawn : MonoBehaviour
         {
             Debug.LogWarning($"[PlayerSpawner] Prefab '{data.characterPrefab.name}' không có tag 'Player' -> CameraController có thể không tìm thấy.");
         }
+        AssignCameraTarget(playerInstance);
 
         Debug.Log($"[PlayerSpawner] Đã spawn nhân vật: {data.characterName}");
+    }
+    private void AssignCameraTarget(GameObject player)
+    {
+        if (cameraController == null)
+            cameraController = FindFirstObjectByType<CameraController>();
+
+        if (cameraController == null)
+        {
+            Debug.LogWarning("[PlayerSpawner] Không tìm thấy CameraController trong scene -> hãy gắn script này vào Main Camera.");
+            return;
+        }
+
+        cameraController.SetPlayer(player);
     }
 }

@@ -22,11 +22,5 @@ MonoBehaviour:
   attackCount: 1
   powerRating: 4
   playerStatsRuntime:
-    hpLevel: 0
-    atkLevel: 0
-    defLevel: 0
-    critLevel: 0
-    armorPenLevel: 0
-    trueDamageLevel: 0
-    dmgReduceLevel: 0
+    totalExp: 0
   statsSO: {fileID: 11400000, guid: ad9bf2a8f436bc04c93349ac7f367368, type: 2}

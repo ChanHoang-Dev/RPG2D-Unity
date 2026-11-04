@@ -14,7 +14,6 @@ public class WizardRangeAttack : MonoBehaviour
     [Header("Attack Settings")]
     [SerializeField] private KeyCode attackKey = KeyCode.J;
     [SerializeField] private float attackCooldown = 0.6f;
-    [SerializeField] private int damage = 10;
     [SerializeField] private float projectileSpeed = 8f;
     [SerializeField] private float projectileLifeTime = 3f;
     [SerializeField] private LayerMask enemyLayer;
@@ -25,8 +24,14 @@ public class WizardRangeAttack : MonoBehaviour
              "Tắt thì chiêu bắn ngay khi bấm phím.")]
     [SerializeField] private bool useAnimationEvent = false;
 
+    private CombatEntity combatEntity;
     private float nextAttackTime;
     private Vector2 pendingDirection = Vector2.right;
+
+    private void Awake()
+    {
+        combatEntity = GetComponent<CombatEntity>();
+    }
 
     private void Update()
     {
@@ -56,7 +61,9 @@ public class WizardRangeAttack : MonoBehaviour
         if (projectilePrefab == null || firePoint == null) return;
 
         ChargePrefabs projectile = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
-        projectile.Init(pendingDirection, projectileSpeed, damage, projectileLifeTime, enemyLayer);
+        // Chụp stat của Wizard tại thời điểm bắn (damage tính theo Attack/Crit... của nhân vật)
+        ICombatStats attackerStats = combatEntity != null ? combatEntity.GetStats() : null;
+        projectile.Init(attackerStats, pendingDirection, projectileSpeed, projectileLifeTime, enemyLayer);
     }
 
     // TODO: đổi cho giống cách Archer xác định hướng (nếu Archer dùng hướng di chuyển / chuột thì copy sang đây)

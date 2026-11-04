@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpMin: 2000
   hpMax: 20000
-  atkMin: 100
-  atkMax: 1000
+  atkMin: 1000
+  atkMax: 10000
   defMin: 100
   defMax: 500
   critChanceMin: 0.05
