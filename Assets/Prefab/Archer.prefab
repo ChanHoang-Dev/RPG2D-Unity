@@ -210,9 +210,16 @@ MonoBehaviour:
   airControlMultiplier: 0.8
   jumpForce: 8
   IsBandit: 0
+  enableWallCheck: 1
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  wallCheckDistance: 0.05
+  wallCheckHeightRatio: 0.9
+  debugWallCheck: 0
   IsArcher: 1
   archerJumpStateName: Knight_White-Jump
-  archerApexNormalizedTime: 0.48
+  archerApexNormalizedTime: 0.0575
   archerApexVelocityThreshold: 0.5
 --- !u!114 &8266548374151341088
 MonoBehaviour:
