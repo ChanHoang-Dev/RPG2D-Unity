@@ -23,6 +23,7 @@ public class FlyingEnemyProperties : MonoBehaviour
     private Collider2D col;
 
     private Transform player;
+    private SamuraiStealth stealth;
     private const string ATTACK_TRIGGER = "Attack";
 
     [Header("Attack Settings")]
@@ -86,6 +87,10 @@ public class FlyingEnemyProperties : MonoBehaviour
         }
 
         if (isAttacking || isHurt)
+        {
+            return;
+        }
+        if(stealth != null && stealth.IsInvisible)
         {
             return;
         }
@@ -184,6 +189,7 @@ public class FlyingEnemyProperties : MonoBehaviour
         if (playerObj != null)
         {
             player = playerObj.transform;
+            stealth = playerObj.GetComponent<SamuraiStealth>();
         }
     }
 

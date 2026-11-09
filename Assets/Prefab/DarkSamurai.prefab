@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 2465608716334562604}
   - component: {fileID: 9047170617791091446}
   - component: {fileID: 7247352391431126086}
+  - component: {fileID: 7060814923292105241}
   m_Layer: 7
   m_Name: DarkSamurai
   m_TagString: Player
@@ -84,7 +85,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1832693521
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -1501021414962227678, guid: d1fc49886a0f96247bfbd5113e109e16, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -223,6 +224,17 @@ MonoBehaviour:
   airControlMultiplier: 0.8
   jumpForce: 8
   IsBandit: 0
+  enableWallCheck: 1
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  wallCheckDistance: 0.05
+  wallCheckHeightRatio: 0.9
+  debugWallCheck: 0
+  IsArcher: 0
+  archerJumpStateName: Knight_White-Jump
+  archerApexNormalizedTime: 0.48
+  archerApexVelocityThreshold: 0.5
 --- !u!114 &4958438009442824797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,6 +307,25 @@ MonoBehaviour:
   spawnOffset: {x: 0, y: 2.5, z: 0}
   randomOffsetRange: 0.3
   expSpawnOffset: {x: 0, y: 1.9, z: 0}
+--- !u!114 &7060814923292105241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88667419230871486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6d9963d6c7b044481c0d5b0e90f454, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  castKey: 107
+  stealthDuration: 10
+  cooldown: 1
+  cooldownStartsAfterStealth: 1
+  stealthAlpha: 0.35
+  warnBlinkTime: 2
+  blinkSpeed: 12
 --- !u!1001 &8741303671776113646
 PrefabInstance:
   m_ObjectHideFlags: 0

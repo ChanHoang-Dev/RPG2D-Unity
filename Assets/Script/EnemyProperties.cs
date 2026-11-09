@@ -15,6 +15,7 @@ public class EnemyProperties : MonoBehaviour
     private Collider2D col;
 
     private Transform player;
+    private SamuraiStealth stealth;
     private const string ATTACK_TRIGGER = "Attack";
 
     [Header("Attack Settings")]
@@ -86,7 +87,12 @@ public class EnemyProperties : MonoBehaviour
             rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
             return;
         }
-
+        if(stealth != null && stealth.IsInvisible)
+        {
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            return;
+        }
+            
         float distance = Vector3.Distance(transform.position, player.position);
         FacePlayer();
 
@@ -174,6 +180,7 @@ public class EnemyProperties : MonoBehaviour
         if (playerObj != null)
         {
             player = playerObj.transform;
+            stealth = playerObj.GetComponent<SamuraiStealth>();
         }
     }
 
