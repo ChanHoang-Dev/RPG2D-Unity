@@ -17,4 +17,6 @@ MonoBehaviour:
   levelIndex: 2
   isUnlocked: 0
   starsEarned: 0
+  enemyLevelMin: 1
+  enemyLevelMax: 1
   sceneNameToLoad: LV3
