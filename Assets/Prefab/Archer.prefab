@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 6424491735940220808}
   - component: {fileID: 7569362563263889442}
   - component: {fileID: 4415713526357216809}
+  - component: {fileID: 2694365049193407061}
   m_Layer: 7
   m_Name: Archer
   m_TagString: Player
@@ -331,6 +332,25 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   projectileLifetime: 3
+--- !u!114 &2694365049193407061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8170379804078104640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb53f80899a1d34aa6bdb95cde03339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrowRainPrefab: {fileID: 1547081877022240157, guid: 9513c1fe20f086c428c29087d9d5b149, type: 3}
+  castKey: 107
+  cooldown: 1
+  offsetX: 0
+  spawnHeight: 10
+  warningAtGround: 1
+  warningOffsetY: 10
 --- !u!1 &8650904550717680635
 GameObject:
   m_ObjectHideFlags: 0

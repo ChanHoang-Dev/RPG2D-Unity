@@ -83,7 +83,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1832693521
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 3010419513617154209, guid: 30f2467365b29ce43b7efaeca2ffb329, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -221,6 +221,7 @@ MonoBehaviour:
   kind: 1
   fallbackPlayerSO: {fileID: 0}
   enemySO: {fileID: 11400000, guid: 07d0c4725576f2f478e6b9aa5d4f2a4f, type: 2}
+  testEnemyLevel: 1
 --- !u!114 &1185596180942668025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,6 +237,7 @@ MonoBehaviour:
   popupPrefab: {fileID: 997000382645009308, guid: e5684ff58751da545ba2548b3e7f6fab, type: 3}
   spawnOffset: {x: 0, y: 2.5, z: 0}
   randomOffsetRange: 0.3
+  expSpawnOffset: {x: 0, y: 1.9, z: 0}
 --- !u!114 &4701953507660298733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,7 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beb2f961b731af04691770805c4c0cb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 1
   stopDistance: 1.5
   animator: {fileID: 1124338120012150688}
   weaponHitbox: {fileID: 1994123630845504801}
