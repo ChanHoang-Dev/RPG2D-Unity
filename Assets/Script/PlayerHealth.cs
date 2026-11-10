@@ -35,6 +35,7 @@ public class PlayerHealth : MonoBehaviour
 
     public int CurrentHealth => currentHealth;
     public bool IsDead => isDead;
+    public bool IsInvincible { get; set; } // LoreonInvincible.cs sẽ set true khi cast chiêu, set false khi hết thời gian chiêu
 
     void Awake()
     {
@@ -112,7 +113,7 @@ public class PlayerHealth : MonoBehaviour
     /// <summary>Đường cũ, vẫn giữ để tương thích chỗ nào đang gọi trực tiếp int</summary>
     public void TakeDamage(int amount)
     {
-        if (isDead) return;
+        if (isDead || IsInvincible) return;
         if (amount <= 0) return;
 
         currentHealth = Mathf.Max(0, currentHealth - amount);
@@ -131,7 +132,7 @@ public class PlayerHealth : MonoBehaviour
     /// <summary>NEW: nhận DamageResult từ CombatCalculator, xử lý cả Miss</summary>
     public void TakeDamage(DamageResult result)
     {
-        if (isDead) return;
+        if (isDead || IsInvincible) return;
 
         OnDamageTaken?.Invoke(result); // popup UI tự đọc isMiss để hiện "Miss"
 

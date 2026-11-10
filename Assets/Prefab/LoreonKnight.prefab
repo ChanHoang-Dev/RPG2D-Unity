@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 6803081044011326705}
   - component: {fileID: 5270540920011261797}
   - component: {fileID: 6495299608126678453}
+  - component: {fileID: 2519156100287832212}
   m_Layer: 7
   m_Name: LoreonKnight
   m_TagString: Player
@@ -36,7 +37,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 17.74, y: 2.3, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7317152814879764238}
@@ -309,6 +310,23 @@ MonoBehaviour:
   spawnOffset: {x: 0, y: 1.2, z: 0}
   randomOffsetRange: 0.3
   expSpawnOffset: {x: 0, y: 1.9, z: 0}
+--- !u!114 &2519156100287832212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219543493644265849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61a88cbc9e6235d48a631415757af205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  castKey: 107
+  activeDuration: 10
+  cooldown: 10
+  invincibleColor: {r: 0.6, g: 0.25, b: 0.9, a: 1}
+  tintChildren: 0
 --- !u!1001 &4381361431282232745
 PrefabInstance:
   m_ObjectHideFlags: 0
