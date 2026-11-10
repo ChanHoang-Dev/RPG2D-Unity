@@ -1,5 +1,152 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5809963930563103856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1986723644996048105}
+  - component: {fileID: 3037448302904617009}
+  - component: {fileID: 6920272131243074114}
+  - component: {fileID: 1536466168673258250}
+  m_Layer: 0
+  m_Name: Ring
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1986723644996048105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5809963930563103856}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 13, y: 13, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4047178649037619123}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &3037448302904617009
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5809963930563103856}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 135e0beaf4c9877478ca850ea53b17ac, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1832693521
+  m_SortingLayer: 3
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 7482667652216324306, guid: b18e46556976e0f4598bd8e61a29cb8b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!58 &6920272131243074114
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5809963930563103856}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: -0.000000029802322}
+  m_Radius: 0.4
+--- !u!114 &1536466168673258250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5809963930563103856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 034ecf18582e6b1499cefde6560a2b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ownerCombat: {fileID: 5977057696314995126}
+  tickInterval: 3
+  damageMultiplier: 1
+  allowMiss: 0
+  fallbackDamage: 1
+  damageEnabled: 1
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 134214912
+  innerRadius: 0
 --- !u!1 &7466769566195780921
 GameObject:
   m_ObjectHideFlags: 0
@@ -36,10 +183,11 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.73, y: 2.34, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6875281724394798042}
+  - {fileID: 1986723644996048105}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5455771790954443267
@@ -84,7 +232,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1832693521
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 4723107735738678597, guid: 813cffcd34efddc47a5600985c74e52f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -208,6 +356,17 @@ MonoBehaviour:
   airControlMultiplier: 0.8
   jumpForce: 8
   IsBandit: 0
+  enableWallCheck: 1
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  wallCheckDistance: 0.05
+  wallCheckHeightRatio: 0.9
+  debugWallCheck: 0
+  IsArcher: 0
+  archerJumpStateName: Knight_White-Jump
+  archerApexNormalizedTime: 0.48
+  archerApexVelocityThreshold: 0.5
 --- !u!114 &3454203121975657858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,6 +390,9 @@ MonoBehaviour:
   comboBufferOpenAt: 0.8
   comboBufferCloseAt: 0.95
   loopComboAtEnd: 0
+  combatEntity: {fileID: 0}
+  minAttackSpeed: 0.5
+  maxAttackSpeed: 3
 --- !u!114 &7301646480547319091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,6 +440,7 @@ MonoBehaviour:
   kind: 0
   fallbackPlayerSO: {fileID: 11400000, guid: e6244dfd0e83b7642a906efc1acdd98b, type: 2}
   enemySO: {fileID: 0}
+  testEnemyLevel: 1
 --- !u!114 &3196483568777730760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,6 +456,7 @@ MonoBehaviour:
   popupPrefab: {fileID: 997000382645009308, guid: e5684ff58751da545ba2548b3e7f6fab, type: 3}
   spawnOffset: {x: 0, y: 2, z: 0}
   randomOffsetRange: 0.3
+  expSpawnOffset: {x: 0, y: 1.9, z: 0}
 --- !u!1001 &445837639389395325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -309,6 +473,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5381438949650322827, guid: 7cb0fda645e46e64180d435ebc0715a5, type: 3}
+      propertyPath: ownerCombat
+      value: 
+      objectReference: {fileID: 5977057696314995126}
     - target: {fileID: 5381438949650322827, guid: 7cb0fda645e46e64180d435ebc0715a5, type: 3}
       propertyPath: targetLayer.m_Bits
       value: 134213888

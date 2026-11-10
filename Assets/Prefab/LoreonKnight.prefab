@@ -84,7 +84,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1832693521
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -2074723713338306197, guid: c19e500ec41b9a04887c9164d39c19a0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -208,6 +208,17 @@ MonoBehaviour:
   airControlMultiplier: 0.8
   jumpForce: 8
   IsBandit: 0
+  enableWallCheck: 1
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  wallCheckDistance: 0.05
+  wallCheckHeightRatio: 0.9
+  debugWallCheck: 0
+  IsArcher: 0
+  archerJumpStateName: Knight_White-Jump
+  archerApexNormalizedTime: 0.48
+  archerApexVelocityThreshold: 0.5
 --- !u!114 &5283653715481292131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,6 +321,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AttackPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 5381438949650322827, guid: 7cb0fda645e46e64180d435ebc0715a5, type: 3}
+      propertyPath: ownerCombat
+      value: 
+      objectReference: {fileID: 5270540920011261797}
     - target: {fileID: 5381438949650322827, guid: 7cb0fda645e46e64180d435ebc0715a5, type: 3}
       propertyPath: targetLayer.m_Bits
       value: 134213888
